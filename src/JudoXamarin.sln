@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JudoDotNetXamarinAndroidSDK
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JudoDotNetXamariniOSSDK", "JudoDotNetXamariniOSSDK\JudoDotNetXamariniOSSDK.csproj", "{5E165F2E-27FC-4C2E-9ABD-7B54431D4333}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JudoDotNetXamariniOSTests", "JudoDotNetXamariniOSTests\JudoDotNetXamariniOSTests.csproj", "{68024C5D-9859-42D4-8D24-67701A013897}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,6 +57,18 @@ Global
 		{5E165F2E-27FC-4C2E-9ABD-7B54431D4333}.Release|iPhone.Build.0 = Release|Any CPU
 		{5E165F2E-27FC-4C2E-9ABD-7B54431D4333}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
 		{5E165F2E-27FC-4C2E-9ABD-7B54431D4333}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{68024C5D-9859-42D4-8D24-67701A013897}.Debug|Any CPU.ActiveCfg = Debug|iPhoneSimulator
+		{68024C5D-9859-42D4-8D24-67701A013897}.Debug|Any CPU.Build.0 = Debug|iPhoneSimulator
+		{68024C5D-9859-42D4-8D24-67701A013897}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{68024C5D-9859-42D4-8D24-67701A013897}.Debug|iPhone.Build.0 = Debug|iPhone
+		{68024C5D-9859-42D4-8D24-67701A013897}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{68024C5D-9859-42D4-8D24-67701A013897}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{68024C5D-9859-42D4-8D24-67701A013897}.Release|Any CPU.ActiveCfg = Release|iPhone
+		{68024C5D-9859-42D4-8D24-67701A013897}.Release|Any CPU.Build.0 = Release|iPhone
+		{68024C5D-9859-42D4-8D24-67701A013897}.Release|iPhone.ActiveCfg = Release|iPhone
+		{68024C5D-9859-42D4-8D24-67701A013897}.Release|iPhone.Build.0 = Release|iPhone
+		{68024C5D-9859-42D4-8D24-67701A013897}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{68024C5D-9859-42D4-8D24-67701A013897}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
