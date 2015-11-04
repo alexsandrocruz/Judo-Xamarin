@@ -49,11 +49,8 @@
     <Reference Include="FluentValidation">
       <HintPath>..\packages\FluentValidation.5.6.2.0\lib\portable-net45+wp80+win8+wpa81\FluentValidation.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>..\..\samples\iOS\packages\Newtonsoft.Json.7.0.1\lib\portable-net45+wp80+win8+wpa81+dnxcore50\Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="Serilog">
-      <HintPath>..\..\samples\iOS\packages\Serilog.1.5.12\lib\portable-net45+win+wpa81+wp80+MonoAndroid10+MonoTouch10\Serilog.dll</HintPath>
+      <HintPath>..\packages\Serilog.1.5.12\lib\portable-net45+win+wpa81+wp80+MonoAndroid10+MonoTouch10\Serilog.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
