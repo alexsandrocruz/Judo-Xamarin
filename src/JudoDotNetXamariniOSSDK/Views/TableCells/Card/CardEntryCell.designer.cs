@@ -4,13 +4,19 @@
 // actions made in the UI designer. If it is removed, they will be lost.
 // Manual changes to this file may not be handled correctly.
 //
+using System.CodeDom.Compiler;
 
-using Foundation;
-using JudoDotNetXamariniOSSDK.Controllers;
-using UIKit;
 #if __UNIFIED__
+using Foundation;
+using UIKit;
+using CoreFoundation;
+using CoreAnimation;
+using CoreGraphics;
+using ObjCRuntime;
 // Mappings Unified CoreGraphic classes to MonoTouch classes
-
+using RectangleF = global::CoreGraphics.CGRect;
+using SizeF = global::CoreGraphics.CGSize;
+using PointF = global::CoreGraphics.CGPoint;
 #else
 using MonoTouch.UIKit;
 using MonoTouch.Foundation;
@@ -24,13 +30,13 @@ using nint = global::System.Int32;
 using nuint = global::System.UInt32;
 #endif
 
-namespace JudoDotNetXamariniOSSDK.Views.TableCells.Card
+namespace JudoDotNetXamariniOSSDK
 {
 	[Register ("CardEntryCell")]
 	partial class CardEntryCell
 	{
 		[Outlet]
-		PlaceHolderTextView ccPlaceHolder { get; set; }
+		JudoDotNetXamariniOSSDK.PlaceHolderTextView ccPlaceHolder { get; set; }
 
 		[Outlet]
 		NSLayoutConstraint ccPLaceHolderToScrollViewConstraint { get; set; }
@@ -48,7 +54,7 @@ namespace JudoDotNetXamariniOSSDK.Views.TableCells.Card
 		UIImageView creditCardImage { get; set; }
 
 		[Outlet]
-		PlaceHolderTextView cvTwoPlaceHolder { get; set; }
+		JudoDotNetXamariniOSSDK.PlaceHolderTextView cvTwoPlaceHolder { get; set; }
 
 		[Outlet]
 		UITextView cvTwoText { get; set; }
@@ -60,7 +66,7 @@ namespace JudoDotNetXamariniOSSDK.Views.TableCells.Card
 		UIButton ExpiryInfoButton { get; set; }
 
 		[Outlet]
-		PlaceHolderTextView expiryPlaceHolder { get; set; }
+		JudoDotNetXamariniOSSDK.PlaceHolderTextView expiryPlaceHolder { get; set; }
 
 		[Outlet]
 		UITextView expiryText { get; set; }
@@ -72,7 +78,7 @@ namespace JudoDotNetXamariniOSSDK.Views.TableCells.Card
 		UILabel StatusHelpLabel { get; set; }
 
 		[Outlet]
-		FixedScrollView textScroller { get; set; }
+		JudoDotNetXamariniOSSDK.FixedScrollView textScroller { get; set; }
 		
 		void ReleaseDesignerOutlets ()
 		{

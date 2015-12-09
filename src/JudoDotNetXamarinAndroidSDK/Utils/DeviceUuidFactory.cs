@@ -1,8 +1,21 @@
-using Android.Content;
-using Android.Provider;
-using Java.Util;
+using System.Collections.Generic;
+using System.Linq;
+using System.Security.Cryptography;
+using System.Text;
 
-namespace JudoDotNetXamarinAndroidSDK.Utils
+using Android.App;
+using Android.Content;
+using Android.OS;
+using Android.Provider;
+using Android.Runtime;
+using Android.Text;
+using Android.Views;
+using Android.Widget;
+using Java.Lang;
+using Java.Util;
+using Exception = System.Exception;
+
+namespace JudoDotNetXamarinSDK.Utils
 {
     public class DeviceUuidFactory
     {

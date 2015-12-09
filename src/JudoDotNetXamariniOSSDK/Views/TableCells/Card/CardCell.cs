@@ -1,8 +1,14 @@
 ﻿using System;
-using UIKit;
 #if __UNIFIED__
+using Foundation;
+using UIKit;
+using CoreFoundation;
+using CoreGraphics;
+using ObjCRuntime;
 // Mappings Unified CoreGraphic classes to MonoTouch classes
-
+using RectangleF = global::CoreGraphics.CGRect;
+using SizeF = global::CoreGraphics.CGSize;
+using PointF = global::CoreGraphics.CGPoint;
 #else
 using MonoTouch.UIKit;
 using MonoTouch.Foundation;
@@ -15,7 +21,7 @@ using nint = global::System.Int32;
 using nuint = global::System.UInt32;
 #endif
 
-namespace JudoDotNetXamariniOSSDK.Views.TableCells.Card
+namespace JudoDotNetXamariniOSSDK
 {
 	public abstract  class CardCell : UITableViewCell
 	{

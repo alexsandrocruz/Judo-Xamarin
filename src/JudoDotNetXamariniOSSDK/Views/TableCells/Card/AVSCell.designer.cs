@@ -6,7 +6,15 @@
 //
 #if __UNIFIED__
 using Foundation;
+using UIKit;
+using CoreFoundation;
+using CoreAnimation;
+using CoreGraphics;
+using ObjCRuntime;
 // Mappings Unified CoreGraphic classes to MonoTouch classes
+using RectangleF = global::CoreGraphics.CGRect;
+using SizeF = global::CoreGraphics.CGSize;
+using PointF = global::CoreGraphics.CGPoint;
 #else
 using MonoTouch.UIKit;
 using MonoTouch.Foundation;
@@ -19,9 +27,9 @@ using nfloat = global::System.Single;
 using nint = global::System.Int32;
 using nuint = global::System.UInt32;
 #endif
-using UIKit;
+using System.CodeDom.Compiler;
 
-namespace JudoDotNetXamariniOSSDK.Views.TableCells.Card
+namespace JudoDotNetXamariniOSSDK
 {
 	[Register ("AVSCell")]
 	partial class AVSCell

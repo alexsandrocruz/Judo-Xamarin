@@ -15,7 +15,7 @@
     <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TargetFrameworkProfile>Profile111</TargetFrameworkProfile>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
-    <ReleaseVersion>2.2.0</ReleaseVersion>
+    <ReleaseVersion>2.1.0</ReleaseVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -39,39 +39,9 @@
     <Compile Include="Logging\Logger.cs" />
     <Compile Include="Logging\XamarinLoggerFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ViewModels\CardViewModel.cs" />
-    <Compile Include="ViewModels\PaymentViewModel.cs" />
-    <Compile Include="ViewModels\TokenPaymentViewModel.cs" />
-    <Compile Include="Enum\ApplePaymentType.cs" />
-    <Compile Include="Enum\BillingCountryOptions.cs" />
-    <Compile Include="Enum\ISO3166CountryCodes.cs" />
-    <Compile Include="Models\Address.cs" />
-    <Compile Include="Models\Card.cs" />
-    <Compile Include="Models\JudoError.cs" />
-    <Compile Include="Helpers\CreditCard.cs" />
-    <Compile Include="Helpers\CSRange.cs" />
-    <Compile Include="JudoConfiguration.cs" />
-    <Compile Include="ViewModels\BasePaymentViewModel.cs" />
-    <Compile Include="Delegates\JudoFailureCallback.cs" />
-    <Compile Include="Delegates\JudoSuccessCallback.cs" />
-    <Compile Include="Models\ClientDetails.cs" />
-    <Compile Include="IJudoSDKManager.cs" />
-    <Compile Include="Clients\IJudoSDKApi.cs" />
-    <Compile Include="Services\IPaymentService.cs" />
-    <Compile Include="Services\PaymentService.cs" />
-    <Compile Include="Services\IClientService.cs" />
-    <Compile Include="Helpers\BillingCountryOptionsExtensions.cs" />
-    <Compile Include="Factories\ServiceFactory.cs" />
-    <Compile Include="Helpers\ErrorExtensions.cs" />
-    <Compile Include="Models\judoReceipt.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Configuration\" />
-    <Folder Include="ViewModels\" />
-    <Folder Include="Helpers\" />
-    <Folder Include="Delegates\" />
-    <Folder Include="Clients\" />
-    <Folder Include="Services\" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="JudoPayDotNet">
@@ -81,10 +51,10 @@
       <HintPath>..\packages\FluentValidation.5.6.2.0\lib\portable-net45+wp80+win8+wpa81\FluentValidation.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\portable-net45+wp80+win8+wpa81+dnxcore50\Newtonsoft.Json.dll</HintPath>
+      <HintPath>..\..\samples\iOS\packages\Newtonsoft.Json.7.0.1\lib\portable-net45+wp80+win8+wpa81+dnxcore50\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Serilog">
-      <HintPath>..\packages\Serilog.1.5.12\lib\portable-net45+win+wpa81+wp80+MonoAndroid10+MonoTouch10\Serilog.dll</HintPath>
+      <HintPath>..\..\samples\iOS\packages\Serilog.1.5.12\lib\portable-net45+win+wpa81+wp80+MonoAndroid10+MonoTouch10\Serilog.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

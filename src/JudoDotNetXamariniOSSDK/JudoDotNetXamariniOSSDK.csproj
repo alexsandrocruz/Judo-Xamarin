@@ -9,7 +9,7 @@
     <RootNamespace>JudoDotNetXamariniOSSDK</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
     <AssemblyName>JudoDotNetXamariniOSSDK</AssemblyName>
-    <ReleaseVersion>2.2.0</ReleaseVersion>
+    <ReleaseVersion>2.1.0</ReleaseVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -69,19 +69,38 @@
     <InterfaceDefinition Include="Views\RegisterCardView~ipad.xib" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Clients\IJudoSDKApi.cs" />
     <Compile Include="Clients\NonUIMethods.cs" />
     <Compile Include="Clients\UIMethods.cs" />
     <Compile Include="Controllers\LocationManager.cs" />
     <Compile Include="Controllers\PlaceHolderTextView.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Enum\ISO3166CountryCodes.cs" />
     <Compile Include="Helpers\LoadingOverlay.cs" />
+    <Compile Include="Models\JudoError.cs" />
+    <Compile Include="Models\Receipt.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="JudoSDKManager.cs" />
+    <Compile Include="Models\Card.cs" />
+    <Compile Include="Models\Address.cs" />
+    <Compile Include="Enum\BillingCountryOptions.cs" />
     <Compile Include="Helpers\ThemeBundleReplacement.cs" />
+    <Compile Include="Helpers\ColourHelper.cs" />
+    <Compile Include="Helpers\CSRange.cs" />
+    <Compile Include="Controllers\CreditCard.cs" />
     <Compile Include="Controllers\PlaceHolderTextView.designer.cs">
       <DependentUpon>PlaceHolderTextView.cs</DependentUpon>
     </Compile>
+    <Compile Include="Services\IPaymentService.cs" />
+    <Compile Include="Services\PaymentService.cs" />
+    <Compile Include="Utils\ClientDetailsProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="ViewLocator.cs" />
+    <Compile Include="ViewModels\CardViewModel.cs" />
+    <Compile Include="ViewModels\PaymentViewModel.cs" />
+    <Compile Include="Factories\ServiceFactory.cs" />
     <Compile Include="Views\CreditCardView.cs" />
     <Compile Include="Views\CreditCardView.designer.cs">
       <DependentUpon>CreditCardView.cs</DependentUpon>
@@ -90,6 +109,8 @@
     <Compile Include="Views\SlideUpMenu.designer.cs">
       <DependentUpon>SlideUpMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\EnumExtensions.cs" />
+    <Compile Include="JudoConfiguration.cs" />
     <Compile Include="Views\TableCells\Card\CardEntryCell.cs" />
     <Compile Include="Views\TableCells\Card\CardEntryCell.designer.cs">
       <DependentUpon>CardEntryCell.cs</DependentUpon>
@@ -120,6 +141,7 @@
     <Compile Include="Views\TokenPaymentView.designer.cs">
       <DependentUpon>TokenPaymentView.cs</DependentUpon>
     </Compile>
+    <Compile Include="ViewModels\TokenPaymentViewModel.cs" />
     <Compile Include="Views\TokenPreAuthorisationView.cs" />
     <Compile Include="Views\TokenPreAuthorisationView.designer.cs">
       <DependentUpon>TokenPreAuthorisationView.cs</DependentUpon>
@@ -136,19 +158,9 @@
     <Compile Include="Services\ApplePayService.cs" />
     <Compile Include="ViewModels\ApplePayViewModel.cs" />
     <Compile Include="Delegates\JudoPKPaymentAuthorizationViewControllerDelegate.cs" />
+    <Compile Include="Models\PKPaymentTokenClientModel.cs" />
     <Compile Include="Controllers\NumberHelper.cs" />
-    <Compile Include="Controllers\CardImageHelper.cs" />
-    <Compile Include="Helpers\ColourHelper.cs" />
-    <Compile Include="Helpers\iOSConstants.cs" />
-    <Compile Include="Controllers\LoadingScreen.cs" />
-    <Compile Include="Controllers\SecureManager.cs" />
-    <Compile Include="JudoSDKManager.cs" />
-    <Compile Include="Clients\IApplePayMethods.cs" />
-    <Compile Include="Utils\ClientService.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Helpers\EnumExtensions.cs" />
-    <Compile Include="Factories\AppleServiceFactory.cs" />
+    <Compile Include="Enum\ApplePaymentType.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
@@ -242,5 +254,7 @@
       <Name>JudoDotNetXamarin</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Delegates\" />
+  </ItemGroup>
 </Project>

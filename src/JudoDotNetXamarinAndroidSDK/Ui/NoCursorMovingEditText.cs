@@ -12,7 +12,7 @@ using Android.Views;
 using Android.Views.InputMethods;
 using Android.Widget;
 
-namespace JudoDotNetXamarinAndroidSDK.Ui
+namespace JudoDotNetXamarinSDK.Ui
 {
     public class NoCursorMovingEditText : EditText
     {
