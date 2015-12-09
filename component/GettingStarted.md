@@ -17,11 +17,34 @@ To start using the judoPay library you'll first need to configure your SDK to se
 You can do this with the following code:
 
 ### Configuring judoPay APIs
-Add the following code snippet to your project upon start up or before making your transaction call.
-This is best done within the AppDelegates FinishedLaunching method (iOS) or within the apps initial activity's OnCreate() method (Android).
-Specifying your ApiToken, ApiSecret and Judo ID which you can find in the Dashboard (this code snippet is configured to operate in Sandbox environment. 
 
+
+#####Android
 ``` csharp
+protected override void OnCreate( Bundle bundle )
+{
+	base.OnCreate (bundle);
+	
+	private const string ApiToken   = "{ApiToken}";
+	private const string ApiSecret	= "{ApiSecret}";
+	
+	JudoSDKManager.Configuration.SetApiTokenAndSecret(
+	ApiToken, 
+	ApiSecret,
+	JudoEnvironment.Sandbox );
+	
+	JudoSDKManager.Configuration.IsAVSEnabled = true;
+	JudoSDKManager.Configuration.IsFraudMonitoringSignals = true;
+	JudoSDKManager.Configuration.IsMaestroEnabled = true;
+	
+	// your code
+}
+```
+
+#####iOS
+``` csharp
+public override bool FinishedLaunching (UIApplication a,NSDictionary o)
+{
 var configInstance = JudoConfiguration.Instance;
 
 	//setting for SandBox
@@ -41,9 +64,10 @@ var configInstance = JudoConfiguration.Instance;
     //the box UI solution
     JudoSDKManager.UIMode = true;
             
+}
 ```
 
-**Please note:** You can configure judoPay library to use live environment by changing JudoConfiguration.Instance.Environment from `JudoEnvironment.Sandbox` to `JudoEnvironment.live`
+**Please note:** You can configure judoPay library to use live environment by changing the third parameter in `SetApiTokenAndSecret ()`from `JudoEnvironment.Sandbox` to `JudoEnvironment.live`
 
 
 ### Card payment
@@ -51,6 +75,16 @@ var configInstance = JudoConfiguration.Instance;
 Now that you've configured your SDK with your API Tokens and Secrets, you're ready to use the JudoSDKManager to process payments. 
 
 By calling the following with the SDK Manager, you'll invoke judo's UI to enter card data and submit the payment request:
+
+#####Android
+```csharp
+
+var intent = JudoSDKManager.UIMethods.Payment ( Context context,  	judoId, currency, amount, paymentReference, consumerRef, metaData );
+
+StartActivityForResult ( intent, ACTION_CARD_PAYMENT );
+
+// your code ...
+```
 
 #####iOS
 ```csharp
@@ -76,14 +110,7 @@ var paymentViewModel = new PaymentViewModel
      };
 
 //Let Judo do the rest
-
-///iOS
-JudoSDKManager.Instance.Payment(paymentViewModel, successCallback, failureCallback);
-
-///Android
-var context = [Your current Android activity context]
-JudoSDKManager.Instance.Payment(paymentViewModel, successCallback,failureCallback,context);
- 
+JudoSDKManager.Payment(paymentViewModel, successCallback, failureCallback, this.NavigationController);
 
 ```
 ####Note: 
@@ -93,29 +120,35 @@ This callback should be non-blocking
 
 You can PreAuthorise an amount on a consumer's card with our SDK in order to settle in the future. You can invoke this method, with the below:
 
+#####Android
 ```csharp
-///iOS
-JudoSDKManager.Instance.PreAuth(paymentViewModel, successCallback, failureCallback);
+var intent = JudoSDKManager.UIMethods.PreAuth(Context context,string judoId, string currency, string amount,string paymentReference, string consumerRef, Dictionary<string, string> metaData,string consumerToken);
 
-///Android
-JudoSDKManager.Instance.PreAuth(paymentViewModel, successCallback,failureCallback,context);
+StartActivityForResult ( intent, ACTION_PREAUTH );
 
-//set the amount to the amount of money you wish to preAuthorise the card against
 // your code ...
 ```
 
+#####iOS
+```csharp
+JudoSDKManager.PreAuth(paymentViewModel, successCallback, failureCallback, this.NavigationController);
+//set the amount to the amount of money you wish to preAuthorise the card against
+// your code ...
+```
 ### Register card
 
 You can register a consumer's card with our SDK in order to process future payments. You can invoke this method, with the below:
 
-
+#####Android
 ```csharp
-//iOS
-JudoSDKManager.Instance.RegisterCard(paymentViewModel, successCallback, failureCallback);
+var intent = JudoSDKManager.UIMethods.RegisterCard (Context context, consumerRef );
 
-///Android
-JudoSDKManager.Instance.RegisterCard(paymentViewModel, successCallback, failureCallback,context);
+// your code ...
+```
 
+#####iOS
+```csharp
+JudoSDKManager.RegisterCard(paymentViewModel, successCallback, failureCallback, this.NavigationController);
 //set amount in paymentViewModel to 0.00, no money should be charged through card Registration
 // your code ...
 ```
@@ -126,14 +159,17 @@ When you've successfully processed this call, judo's API will return a Consumer 
 ### Token payment
 
 A Token payment allows you to process future payments on behalf of a consumer without you having to store sensitive card data - this means you don't have to worry about PCI compliance. You can initiate a Token payment with the below:
-
+#####Android
 ```csharp
-///iOS
-JudoSDKManager.Instance.TokenPayment(tokenPayment, successCallback, failureCallback);
+var intent = JudoSDKManager.UIMethods.TokenPayment (Context context, string judoId, string currency, string amount,string paymentRef, string consumerRef, CardToken cardToken, Dictionary<string, string> metaData, string consumerToken = null);
 
-///Android
-JudoSDKManager.Instance.TokenPayment(tokenPayment, successCallback, failureCallback,context);
+StartActivityForResult ( intent, ACTION_TOKEN_PAYMENT );
 
+// your code ...
+```
+#####iOS
+```csharp
+JudoSDKManager.TokenPayment(tokenPayment, successCallback, failureCallback, this.NavigationController);
 // your code ...
 ```
 
@@ -254,15 +290,22 @@ You can also customize the messages you present to your user by updating followi
 
 # Build your own UI
 
-Alternatively, if you want full control over your UI, you can create your own UI for your user to enter their card details. To process payments from your own UI, gather the data your UI provides into a CardViewModel,
-set JudoSDKManager.UIMode = false and make calls as your would before.
+Alternatively, if you want full control over your UI, you can create your own UI for your user to enter their card details. To process payments from your own UI, you can use the following: 
 
-### JudoSDKManager Non UI Mode
+### JudoSDKManager.NonUIMethods 
 
+#####Android
+```csharp
+var paymentTask = JudoSDKManager.NonUIMethods.Payment ( this, MY_JUDO_ID,currency,amount,paymentReference,consumerRef,metaData, cardNumber,                                                 addressPostCode, startDate,expiryDate, cv2 );
+
+// your code ...
+```
+
+#####iOS
 ```csharp
 JudoSDKManager.UIMode = false;
 
-var cardViewModel =new CardViewModel(){ CardNumber = cardNumber, CV2 = cv2, ExpireDate = expiryDate, PostCode = addressPostCode, CountryCode = ISO3166CountryCodes.UK}
+var cardViewModel =new CardViewModel() { CardNumber = cardNumber, CV2 = cv2, ExpireDate = expiryDate, PostCode = addressPostCode, CountryCode = ISO3166CountryCodes.UK}
 
 var paymentViewModel = new PaymentViewModel
             {
@@ -273,11 +316,7 @@ var paymentViewModel = new PaymentViewModel
                 // Non-UI API needs to pass card detail
                 Card =cardViewModel
             };
-///iOS
- JudoSDKManager.Payment(paymentViewModel, successCallback, failureCallback);
- 
- ///Android
- JudoSDKManager.Payment(paymentViewModel, successCallback, failureCallback,context);               
+ JudoSDKManager.Payment(paymentViewModel, successCallback, failureCallback, this.NavigationController);            
  
 // your code ...
 ```

@@ -1,17 +1,19 @@
-﻿using System;
+﻿
+using System;
 using System.Text;
-using CoreAnimation;
-using CoreFoundation;
-using Foundation;
-using JudoDotNetXamarin;
-using JudoDotNetXamariniOSSDK.Controllers;
-using JudoDotNetXamariniOSSDK.Helpers;
 using JudoPayDotNet.Models;
-using UIKit;
 
 #if __UNIFIED__
+using Foundation;
+using UIKit;
+using CoreFoundation;
+using CoreAnimation;
+using CoreGraphics;
+using ObjCRuntime;
 // Mappings Unified CoreGraphic classes to MonoTouch classes
-
+using RectangleF = global::CoreGraphics.CGRect;
+using SizeF = global::CoreGraphics.CGSize;
+using PointF = global::CoreGraphics.CGPoint;
 #else
 using MonoTouch.UIKit;
 using MonoTouch.Foundation;
@@ -25,108 +27,108 @@ using nint = global::System.Int32;
 using nuint = global::System.UInt32;
 #endif
 
-namespace JudoDotNetXamariniOSSDK.Views.TableCells.Card
+namespace JudoDotNetXamariniOSSDK
 {
-    public partial class TokenPaymentCell : CardCell
-    {
+	public partial class TokenPaymentCell : CardCell
+	{
 
-        CreditCard cardHelper = new CreditCard ();
-        public static readonly UINib Nib = UINib.FromName ("TokenPaymentCell", NSBundle.MainBundle);
+		CreditCard cardHelper = new CreditCard ();
+		public static readonly UINib Nib = UINib.FromName ("TokenPaymentCell", NSBundle.MainBundle);
 
-        public string CCV{ get; set; }
+		public string CCV{ get; set; }
 
-        public CardType CardType { get; set; }
+	    public CardType CardType { get; set; }
+	    public string LastFour { get; set; }
 
-        public string LastFour { get; set; }
+		public bool Complete { get; set; }
 
-        public bool Complete { get; set; }
+		int LengthForType;
 
-        int LengthForType;
+		public UITextField CCVEntryOutlet { get { return entryField; } }
 
-        public UITextField CCVEntryOutlet { get { return entryField; } }
-
-        public TokenPaymentCell (IntPtr handle)
-            : base (handle)
+        public TokenPaymentCell(IntPtr handle)
+            : base(handle)
         {
             Key = "TokenPaymentCell";
         }
 
-        public override CardCell Create ()
-        {
-            return (TokenPaymentCell)Nib.Instantiate (null, null) [0];
-        }
+        public override CardCell Create()
+		{
+			return (TokenPaymentCell)Nib.Instantiate (null, null) [0];
+		}
 
 
-        public override void LayoutSubviews ()
-        {
-            base.LayoutSubviews ();
-        }
+		public override void LayoutSubviews ()
+		{
+			base.LayoutSubviews ();
+		}
 
-        public override void SetUpCell ()
-        {
-            UIImage frontImage = CardType.CreditCardImage ();
+		public override void SetUpCell ()
+		{
+			UIImage frontImage = cardHelper.CreditCardImage (CardType);
 
-            CALayer layer = EntryEnclosingView.Layer;
-            layer.CornerRadius = 4.0f;
-            layer.MasksToBounds = true;
-            layer.BorderColor = ColourHelper.GetColour ("0xC3C3C3FF").CGColor; 
-            layer.BorderWidth = 1;
+			CALayer layer = EntryEnclosingView.Layer;
+			layer.CornerRadius = 4.0f;
+			layer.MasksToBounds = true;
+			layer.BorderColor = ColourHelper.GetColour ("0xC3C3C3FF").CGColor; 
+			layer.BorderWidth = 1;
 
-            cardImage.Image = frontImage;
+			cardImage.Image = frontImage;
 
-            PreviousCardNumber.Text = "xxxx " + LastFour;
-            LengthForType = CardType == CardType.AMEX ? 4 : 3;
+			PreviousCardNumber.Text = "xxxx " + LastFour;
+			LengthForType = CardType == CardType.AMEX ? 4 : 3;
 
-            entryField.ShouldChangeCharacters = (UITextField textView, NSRange NSRange, string replace) => {
+			entryField.ShouldChangeCharacters = (UITextField textView, NSRange NSRange, string replace) => {
 				
-                CSRange range = new CSRange ((int)NSRange.Location, (int)NSRange.Length);
-                Complete = false;
+				CSRange range = new CSRange ((int)NSRange.Location, (int)NSRange.Length);
+				Complete = false;
 
-                if (range.Length > 1) {
-                    return false;
-                }
-                if (replace.Length > 1) {
+				if (range.Length > 1) {
+					return false;
+				}
+				if (replace.Length > 1) {
 					
-                    return false;
-                }
-                if (replace.Length == 1 && !char.IsDigit (replace.ToCharArray () [0])) {
+					return false;
+				}
+				if (replace.Length == 1 && !char.IsDigit (replace.ToCharArray () [0])) {
 					
-                    return false;
-                }
-                if (textView.Text.Length + replace.Length - range.Length > LengthForType) {
+					return false;
+				}
+				if (textView.Text.Length + replace.Length - range.Length > LengthForType) {
 					
-                    return false;
-                }
-                if (replace != "" && textView.Text.Length + replace.Length == LengthForType) {
-                    var aStringBuilder = new StringBuilder (textView.Text);
-                    aStringBuilder.Remove (range.Location, range.Length);
-                    aStringBuilder.Insert (range.Location, replace);
-                    string newTextOrig = aStringBuilder.ToString ();
-                    CCV = newTextOrig;
-                    Complete = true;
-                }
-                DispatchQueue.MainQueue.DispatchAsync (() => {
-                    UpdateUI ();
-                });
-                return true;
+					return false;
+				}
+				if(replace!=""&&textView.Text.Length + replace.Length==LengthForType)
+				{
+					var aStringBuilder = new StringBuilder (textView.Text);
+					aStringBuilder.Remove (range.Location, range.Length);
+					aStringBuilder.Insert (range.Location, replace);
+					string newTextOrig = aStringBuilder.ToString ();
+					CCV = newTextOrig;
+				Complete = true;
+				}
+				DispatchQueue.MainQueue.DispatchAsync (() => {
+					UpdateUI ();
+				});
+				return true;
 
-            };
-            entryField.BecomeFirstResponder ();
-        }
+			};
+			entryField.BecomeFirstResponder ();
+		}
 
-        public void CleanUp ()
-        {
-            CCV = "";
-            Complete = false;
-            entryField.Text = "";
-        }
+		public void CleanUp ()
+		{
+			CCV="";
+			Complete = false;
+			entryField.Text="";
+		}
+			
 
+		public override void DismissKeyboardAction ()
+		{
+			entryField.ResignFirstResponder ();
+		}
 
-        public override void DismissKeyboardAction ()
-        {
-            entryField.ResignFirstResponder ();
-        }
-
-    }
+	}
 }
 

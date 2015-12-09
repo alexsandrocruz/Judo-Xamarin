@@ -32,7 +32,7 @@ Thats it!
 -  Again download the component .xam from this page component/judopay-xamarin-sdk-2.0.xam
 
 ####Nuget
--  Coming Soon
+-  Coming soon
 
 ####Getting Started
 
@@ -146,13 +146,13 @@ JudoSDKManager.Payment(paymentViewModel, successCallback, failureCallback, this.
 
 ```
 ####Note: 
-This callback should be non-blocking
+This callback should be non-blocking.
 
 ### Apple Pay
 
-The iOS Implementation supports Apple Pay on payments and PreAuthorisations.
+The iOS implementation supports Apple Pay on payments and Pre-authorizations.
 
-To integrate ApplePay with your app, you must set it up at the Judo Account level ([guide here](https://www.judopay.com/docs/v4_6/apple-pay/quickstart/)), as well as make some changes to your applications settings.
+To integrate Apple Pay with your app, you must set it up at the judo Account level ([guide here](https://www.judopay.com/docs/v4_6/apple-pay/quickstart/)), as well as make some changes to your applications settings.
 
 Add this block of code in your applications Entitlements.Plist:
 ```
@@ -164,7 +164,7 @@ Add this block of code in your applications Entitlements.Plist:
 </dict>
 ```
 
-After you are all set up making an Apple Pay transaction is just as easy as before
+After you are all set up, making an Apple Pay transaction is just as easy as before.
 
 #### Payment
 
@@ -240,21 +240,21 @@ Have your say, If you want a feature maybe we can work together on it?
 ## Release Notes
 
 ####V2.1.0
-- Apple Pay Support for Judo Xamarin iOS: Payments and preauthorisations.
-- JudoShield Support.
+- Apple Pay support for judo Xamarin iOS: Payments and pre-authorizations.
+- judoShield support.
 - Device DNA.
-- Improved Sample application UI.
-- Improved SDK Configuration
+- Improved sample application UI.
+- Improved SDK configuration.
 - 
 ####V2.0 iOS support
--  Full suite of judo services are now available to Xamarin iOS developers
+-  Full suite of judo services are now available to Xamarin iOS developers.
   -  Payments
-  -  pre-Auth
-  -  Token Payments
-  -  Card Registry
--  3D Secure support for Xamarin iOS
--  64bit component support
--  iPad form factor support
+  -  Pre-authorizations
+  -  Token payments
+  -  Card registry
+-  3D Secure support for Xamarin iOS.
+-  64bit component support.
+-  iPad form factor support.
 
 ## Known Issues
 

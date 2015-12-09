@@ -23,7 +23,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-            <judodotnetxamarinandroidsdk.ui.StartDateEditText
+            <judodotnetxamarinsdk.ui.StartDateEditText
                 style="@style/judo_payments_EditText"
                 android:id="@+id/startDateEditText"
                 android:layout_width="0dp"
@@ -53,7 +53,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-            <judodotnetxamarinandroidsdk.ui.IssueNumberEditText
+            <judodotnetxamarinsdk.ui.IssueNumberEditText
                 style="@style/judo_payments_EditText"
                 android:id="@+id/issueNumberEditText"
                 android:layout_width="0dp"

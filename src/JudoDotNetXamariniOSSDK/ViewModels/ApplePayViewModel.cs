@@ -1,8 +1,10 @@
-﻿using System.Linq;
-using Foundation;
+﻿using System;
+using System.Dynamic;
 using PassKit;
+using System.Linq;
+using Foundation;
 
-namespace JudoDotNetXamariniOSSDK.ViewModels
+namespace JudoDotNetXamariniOSSDK
 {
 	public class ApplePayViewModel
 	{
