@@ -1,16 +1,12 @@
 ﻿using System;
 using System.Threading.Tasks;
+using JudoDotNetXamarin;
+using JudoDotNetXamariniOSSDK.Services;
 using JudoPayDotNet.Models;
 
 #if __UNIFIED__
-using Foundation;
-using UIKit;
-using CoreFoundation;
-using CoreGraphics;
 // Mappings Unified CoreGraphic classes to MonoTouch classes
-using RectangleF = global::CoreGraphics.CGRect;
-using SizeF = global::CoreGraphics.CGSize;
-using PointF = global::CoreGraphics.CGPoint;
+
 #else
 using MonoTouch.UIKit;
 using MonoTouch.Foundation;
@@ -24,133 +20,110 @@ using nuint = global::System.UInt32;
 
 namespace JudoDotNetXamariniOSSDK.Clients
 {
-	internal class NonUIMethods :ApplePayMethods, IJudoSDKApi
+    internal class NonUIMethods :IJudoSDKApi
     {
         private readonly IPaymentService _paymentService;
 
-		public NonUIMethods(IApplePayService applePayService,IPaymentService paymentService) :base(applePayService)
+        public NonUIMethods (IPaymentService paymentService)
         {
             _paymentService = paymentService;
         }
 
-        public void Payment(PaymentViewModel payment, SuccessCallback success, FailureCallback failure, UINavigationController navigationController = null)
+        public void Payment (PaymentViewModel payment, JudoSuccessCallback success, JudoFailureCallback failure)
         {
-            try
-            {
-                _paymentService.MakePayment(payment).ContinueWith(reponse => HandResponse(success, failure, reponse));
-            }
-            catch (Exception ex)
-            {
+            try {
+                _paymentService.MakePayment (payment, new ClientService ()).ContinueWith (reponse => HandResponse (success, failure, reponse));
+            } catch (Exception ex) {
                 // Failure
-				HandleFailure (failure,ex);
+                HandleFailure (failure, ex);
             }
         }
 
-		private void HandleFailure (FailureCallback failure,Exception ex)
-		{
-			if (failure != null) {
-				var judoError = new JudoError {
-					Exception = ex
-				};
-				failure (judoError);
-			}
-		}
-
-        public void PreAuth(PaymentViewModel payment, SuccessCallback success, FailureCallback failure, UINavigationController navigationController)
+        private void HandleFailure (JudoFailureCallback failure, Exception ex)
         {
-            try
-            {
-                _paymentService.PreAuthoriseCard(payment).ContinueWith(reponse => HandResponse(success, failure, reponse));
-            }
-            catch (Exception ex)
-            {
-                // Failure
-				HandleFailure (failure,ex);
+            if (failure != null) {
+                var judoError = new JudoError {
+                    Exception = ex
+                };
+                failure (judoError);
             }
         }
 
-        public void TokenPayment(TokenPaymentViewModel payment, SuccessCallback success, FailureCallback failure, UINavigationController navigationController)
+        public void PreAuth (PaymentViewModel payment, JudoSuccessCallback success, JudoFailureCallback failure)
         {
-            try
-            {
-                _paymentService.MakeTokenPayment(payment).ContinueWith(reponse => HandResponse(success, failure, reponse));
-            }
-            catch (Exception ex)
-            {
+            try {
+                _paymentService.PreAuthoriseCard (payment, new ClientService ()).ContinueWith (reponse => HandResponse (success, failure, reponse));
+            } catch (Exception ex) {
                 // Failure
-				HandleFailure (failure,ex);
+                HandleFailure (failure, ex);
             }
         }
 
-        public void TokenPreAuth(TokenPaymentViewModel payment, SuccessCallback success, FailureCallback failure, UINavigationController navigationController)
+        public void TokenPayment (TokenPaymentViewModel payment, JudoSuccessCallback success, JudoFailureCallback failure)
         {
-            try
-            {
-                _paymentService.MakeTokenPreAuthorisation(payment).ContinueWith(reponse => HandResponse(success, failure, reponse));
-            }
-            catch (Exception ex)
-            {
+            try {
+                _paymentService.MakeTokenPayment (payment, new ClientService ()).ContinueWith (reponse => HandResponse (success, failure, reponse));
+            } catch (Exception ex) {
                 // Failure
-				HandleFailure (failure,ex);
+                HandleFailure (failure, ex);
             }
         }
 
-        public void RegisterCard(PaymentViewModel payment, SuccessCallback success, FailureCallback failure, UINavigationController navigationController)
+        public void TokenPreAuth (TokenPaymentViewModel payment, JudoSuccessCallback success, JudoFailureCallback failure)
         {
-            try
-            {
-                _paymentService.RegisterCard(payment).ContinueWith(reponse => HandResponse(success, failure, reponse));
-            }
-            catch (Exception ex)
-            {
+            try {
+                _paymentService.MakeTokenPreAuthorisation (payment, new ClientService ()).ContinueWith (reponse => HandResponse (success, failure, reponse));
+            } catch (Exception ex) {
                 // Failure
-				HandleFailure (failure,ex);
+                HandleFailure (failure, ex);
             }
         }
 
-        private static void HandResponse(SuccessCallback success, FailureCallback failure, Task<IResult<ITransactionResult>> reponse)
+        public void RegisterCard (PaymentViewModel payment, JudoSuccessCallback success, JudoFailureCallback failure)
+        {
+            try {
+                _paymentService.RegisterCard (payment, new ClientService ()).ContinueWith (reponse => HandResponse (success, failure, reponse));
+            } catch (Exception ex) {
+                // Failure
+                HandleFailure (failure, ex);
+            }
+        }
+
+        private static void HandResponse (JudoSuccessCallback success, JudoFailureCallback failure, Task<IResult<ITransactionResult>> reponse)
         {
             var result = reponse.Result;
-            if (result != null && !result.HasError && result.Response.Result != "Declined")
-            {
-				var secureReceipt = result.Response as PaymentRequiresThreeDSecureModel;
-				if (secureReceipt != null) {
-					var judoError = new JudoError { ApiError = result != null ? result.Error : null };
-					failure (new JudoError {ApiError = new JudoPayDotNet.Errors.JudoApiErrorModel{ErrorMessage ="Account requires 3D Secure but non UI Mode does not support this", ErrorType = JudoApiError.General_Error, ModelErrors = null }});
-				}
-
-				var paymentReceipt = result.Response as PaymentReceiptModel;
-
-                if (success != null)
-                {
-                    success(paymentReceipt);
+            if (result != null && !result.HasError && result.Response.Result != "Declined") {
+                var secureReceipt = result.Response as PaymentRequiresThreeDSecureModel;
+                if (secureReceipt != null) {
+                    var judoError = new JudoError { ApiError = result != null ? result.Error : null };
+                    failure (new JudoError { ApiError = new JudoPayDotNet.Errors.JudoApiErrorModel {
+                            ErrorMessage = "Account requires 3D Secure but non UI Mode does not support this",
+                            ErrorType = JudoApiError.General_Error,
+                            ModelErrors = null
+                        } });
                 }
-                else
-                {
-                    throw new Exception("SuccessCallback is not set.");
+
+                var paymentReceipt = result.Response as PaymentReceiptModel;
+
+                if (success != null) {
+                    success (paymentReceipt);
+                } else {
+                    throw new Exception ("SuccessCallback is not set.");
                 }
-            }
-            else
-            {
+            } else {
                 // Failure
-                if (failure != null)
-                {
+                if (failure != null) {
                     var judoError = new JudoError { ApiError = result != null ? result.Error : null };
                     var paymentreceipt = result != null ? result.Response as PaymentReceiptModel : null;
 
-                    if (paymentreceipt != null)
-                    {
+                    if (paymentreceipt != null) {
                         // send receipt even we got card declined
-                        failure(judoError, paymentreceipt);
+                        failure (judoError, paymentreceipt);
+                    } else {
+                        failure (judoError);
                     }
-                    else
-                    {
-                        failure(judoError);
-                    }
-                }
-                else
-                {
-                    throw new Exception("FailureCallback is not set.");
+                } else {
+                    throw new Exception ("FailureCallback is not set.");
                 }
             }
         }

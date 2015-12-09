@@ -1,15 +1,16 @@
 ﻿using System;
 using System.ComponentModel;
+using JudoDotNetXamarin;
 
-namespace JudoDotNetXamariniOSSDK
+namespace JudoDotNetXamariniOSSDK.Helpers
 {
-	internal static class EnumExtensions
-	{
-		public static string ToDescriptionString(this Enum val)
-		{
-			DescriptionAttribute[] attributes = (DescriptionAttribute[])val.GetType().GetField(val.ToString()).GetCustomAttributes(typeof(DescriptionAttribute), false);
-			return attributes.Length > 0 ? attributes[0].Description : string.Empty;
-		}
-	}
+    internal static class EnumExtensions
+    {
+        public static string ToDescriptionString (this Enum val)
+        {
+            EnumDescriptionAttribute[] attributes = (EnumDescriptionAttribute[])val.GetType ().GetField (val.ToString ()).GetCustomAttributes (typeof(EnumDescriptionAttribute), false);
+            return attributes.Length > 0 ? attributes [0].Description : string.Empty;
+        }
+    }
 }
 

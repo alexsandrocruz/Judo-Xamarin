@@ -21,24 +21,24 @@
                 style="@style/judo_payments_InputFieldContainer">
                 <LinearLayout
                     style="@style/judo_payments_InputContainer">
-                    <judodotnetxamarinsdk.ui.CardEntryView
+                    <judodotnetxamarinandroidsdk.ui.CardEntryView
                         android:id="@+id/cardEntryView"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1" />
-                    <judodotnetxamarinsdk.ui.HelpButton
+                    <judodotnetxamarinandroidsdk.ui.HelpButton
                         android:id="@+id/infoButtonID"
                         style="@style/judo_payments_InfoButton"
                         android:src="@drawable/ic_info"
                         android:visibility="gone" />
                 </LinearLayout>
             </LinearLayout>
-            <judodotnetxamarinsdk.ui.StartDateIssueNumberEntryView
+            <judodotnetxamarinandroidsdk.ui.StartDateIssueNumberEntryView
                 android:id="@+id/startDateEntryView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:visibility="gone" />
-            <judodotnetxamarinsdk.ui.AVSEntryView
+            <judodotnetxamarinandroidsdk.ui.AVSEntryView
                 android:id="@+id/avsEntryView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

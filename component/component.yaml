@@ -16,7 +16,7 @@ build:
 libraries:
   android:
     - ../src/JudoDotNetXamarin/bin/Release/JudoDotNetXamarin.dll
-    - ../src/JudoDotNetXamarinAndroidSDK/bin/Release/JudoDotNetXamarinSDK.dll
+    - ../src/JudoDotNetXamarinAndroidSDK/bin/Release/JudoDotNetXamarinAndroidSDK.dll
     - ../lib/JudoPayDotNet.dll
   ios-unified:
     - ../src/JudoDotNetXamarin/bin/Release/JudoDotNetXamarin.dll
@@ -37,4 +37,4 @@ packages:
     - Newtonsoft.Json, version=7.0.1
     - Serilog, version=1.5.12
 publisher-url: "https://www.judopay.com/xamarin?utm_source=xamarin&utm_medium=partnership%20inbound%20links&utm_term=xamarin%20components%20%2D%20publisher%20link&utm_content=partnerships&utm_campaign=xamarin%20components%20%2D%20publisher%20link"
-version: "2.1.0"
+version: "2.2.0"

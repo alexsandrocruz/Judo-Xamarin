@@ -1,16 +1,18 @@
-﻿using System;
-using JudoPayDotNet.Models;
-using System.Threading.Tasks;
-using UIKit;
-using PassKit;
+﻿using System.Threading.Tasks;
 using Foundation;
+using JudoDotNetXamarin;
+using JudoDotNetXamariniOSSDK.ViewModels;
+using JudoPayDotNet.Models;
+using PassKit;
+using UIKit;
 
-namespace JudoDotNetXamariniOSSDK
+namespace JudoDotNetXamariniOSSDK.Services
 {
-	internal interface IApplePayService
-	{
-		void MakeApplePayment (ApplePayViewModel payment,SuccessCallback success, FailureCallback failure,UINavigationController controller, ApplePaymentType type);
-		Task<IResult<ITransactionResult>> HandlePKPayment (PKPayment payment,string customerRef,NSDecimalNumber amount, ApplePaymentType type,FailureCallback failure);
-	}
+    internal interface IApplePayService
+    {
+        void MakeApplePayment (ApplePayViewModel payment, JudoSuccessCallback success, JudoFailureCallback failure, UINavigationController controller, ApplePaymentType type);
+
+        Task<IResult<ITransactionResult>> HandlePKPayment (PKPayment payment, string customerRef, NSDecimalNumber amount, ApplePaymentType type, JudoFailureCallback failure);
+    }
 }
 

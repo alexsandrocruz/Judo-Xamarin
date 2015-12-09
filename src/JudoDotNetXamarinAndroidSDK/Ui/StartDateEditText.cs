@@ -8,10 +8,9 @@ using Android.Content;
 using Android.OS;
 using Android.Runtime;
 using Android.Util;
-using Android.Views;
-using Android.Widget;
 
-namespace JudoDotNetXamarinSDK.Ui
+
+namespace JudoDotNetXamarinAndroidSDK.Ui
 {
     public class StartDateEditText : BackgroundHintTextView
     {

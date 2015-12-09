@@ -1,242 +1,255 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
-using Android.Content;
-using Android.Content.Res;
-using Android.OS;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
-using Javax.Xml.Transform;
-using JudoDotNetXamarin;
-using JudoDotNetXamarinSDK.Activies;
-using JudoDotNetXamarinSDK.Clients;
-using JudoDotNetXamarinSDK.Configurations;
-using JudoDotNetXamarinSDK.Models;
-using JudoDotNetXamarinSDK.Utils;
-using JudoPayDotNet;
-using JudoPayDotNet.Errors;
 using JudoPayDotNet.Models;
 using Newtonsoft.Json.Linq;
-using Configuration = JudoDotNetXamarinSDK.Configurations.Configuration;
-using Consumer = JudoDotNetXamarinSDK.Models.Consumer;
-using Error = JudoDotNetXamarinSDK.Models.Error;
-using Result = Android.App.Result;
+using System.Drawing;
+
 using System.Diagnostics;
-using JudoPayDotNet.Enums;
+using JudoDotNetXamarinAndroidSDK;
+using JudoDotNetXamarin;
+using Android.App;
+using Android.Content;
+using JudoPayDotNet.Errors;
+using JudoDotNetXamarinAndroidSDK.Utils;
+using Newtonsoft.Json;
 
-namespace JudoDotNetXamarinSDK
+
+namespace JudoDotNetXamarinAndroidSDK
 {
-    public sealed class JudoSDKManager
+
+    public class JudoSDKManager
     {
-        public static readonly Result JUDO_SUCCESS = Result.Ok;
-        public static readonly Result JUDO_CANCELLED = Result.Canceled;
-        public static readonly Result JUDO_ERROR = Result.FirstUser;
 
-        public static String JUDO_PAYMENT_REF = "JudoPay-yourPaymentReference";
-        public static String JUDO_AMOUNT = "JudoPay-amount";
-        public static String JUDO_ID = "JudoPay-judoId";
-        public static String JUDO_CURRENCY = "JudoPay-currency";
-        public static String JUDO_META_DATA = "JudoPay-yourPaymentMetaData";
+        public static readonly Android.App.Result JUDO_SUCCESS = Android.App.Result.Ok;
+        public static readonly Android.App.Result JUDO_CANCELLED = Android.App.Result.Canceled;
+        public static readonly Android.App.Result JUDO_ERROR = Android.App.Result.FirstUser;
 
-        public static String JUDO_RECEIPT = "JudoPay-receipt";
 
-        public static String JUDO_CARD_DETAILS = "JudoPay-CardToken";
-        public static String JUDO_CONSUMER = "JudoPay-consumer";
+        public static string JUDO_PAYMENT_REF = "JudoPay-yourPaymentReference";
+        public static string JUDO_AMOUNT = "JudoPay-amount";
+        public static string JUDO_ID = "JudoPay-judoId";
+        public static string JUDO_CURRENCY = "JudoPay-currency";
+        public static string JUDO_META_DATA = "JudoPay-yourPaymentMetaData";
+        public static string REQUEST_CODE = "requestCode";
 
-        public static String JUDO_ERROR_MESSAGE = "ERROR_MESSAGE";
-        public static String JUDO_ERROR_EXCEPTION = "ERROR_EXCEPTION";
+        public static string JUDO_RECEIPT = "JudoPay-receipt";
+
+        public static string JUDO_CARD_DETAILS = "JudoPay-CardToken";
+        public static string JUDO_CONSUMER = "JudoPay-consumer";
+
+        public static string JUDO_ERROR_MESSAGE = "ERROR_MESSAGE";
+        public static string JUDO_ERROR_EXCEPTION = "ERROR_EXCEPTION";
 
         private static string REGULAR_CARD_FORMAT_HINT = "0000 0000 0000 0000";
         private static string AMEX_CARD_FORMAT_HINT = "0000 000000 00000";
-        private static String REGULAR_EXPIRY_AND_VALIDATION_FORMAT_HINT = "MM/YY CV2";
-        private static String AMEX_EXPIRY_AND_VALIDATION_FORMAT_HINT = "MM/YY CIDV";
-        private static String REGULAR_EXPIRY_AND_VALIDATION_ERROR_MESSAGE = "Invalid CV2";
-        private static String AMEX_EXPIRY_AND_VALIDATION_ERROR_MESSAGE = "Invalid CIDV";
+        private static string REGULAR_EXPIRY_AND_VALIDATION_FORMAT_HINT = "MM/YY CV2";
+        private static string AMEX_EXPIRY_AND_VALIDATION_FORMAT_HINT = "MM/YY CIDV";
+        private static string REGULAR_EXPIRY_AND_VALIDATION_ERROR_MESSAGE = "Invalid CV2";
+        private static string AMEX_EXPIRY_AND_VALIDATION_ERROR_MESSAGE = "Invalid CIDV";
+            
+        private static readonly Lazy<JudoSDKManager> _singleton = new Lazy<JudoSDKManager> (() => new JudoSDKManager ());
 
-        
-
-        private readonly object _clientLock = new object();
-        internal IJudoPayApi _judoClient;
-
-        internal static IJudoPayApi JudoClient
-        {
-            get
-            {
-                lock (Instance._clientLock)
-                {
-                    return Instance._judoClient;
-                }
-            }
-        }
-
-        private JudoEnvironment _environment;
-
-        public JudoEnvironment Environment
-        {
-            get
-            {
-                lock (_clientLock)
-                {
-                    return _environment;
-                }
-            }
-        }
-
-        private readonly IUIMethods _uIMethods;
-        public static IUIMethods UIMethods
-        {
-            get { return Instance._uIMethods; }
-        }
-
-        private readonly INonUIMethods _nonUIMethods;
-        public static INonUIMethods NonUIMethods
-        {
-            get { return Instance._nonUIMethods; }
-        }
-
-        private readonly IConfiguration _configuration;
-        public static IConfiguration Configuration
-        {
-            get { return Instance._configuration; }
-        }
-
-        private static readonly Lazy<JudoSDKManager> _singleton = new Lazy<JudoSDKManager>(() => new JudoSDKManager());
-
-        public static JudoSDKManager Instance
-        {
+        public static JudoSDKManager Instance {
             get { return _singleton.Value; }
         }
 
-        static JudoSDKManager()
+        /// <summary>
+        /// Enable 3D security process
+        /// </summary>
+        public static bool ThreeDSecureEnabled{ get; set; }
+
+        /// <summary>
+        /// Enable/Disable AVS check
+        /// </summary>
+        public static bool AVSEnabled { get; set; }
+
+        /// <summary>
+        /// Enable/Disable Amex card support
+        /// </summary>
+        public static bool AmExAccepted { get; set; }
+
+        /// <summary>
+        /// Enable/Disable Mestro card support
+        /// </summary>
+        public static bool MaestroAccepted { get; set; }
+
+        /// <summary>
+        /// Enable/Disable risk signal to pass fruad monitoring device data
+        /// default is true
+        /// </summary>
+        public static bool RiskSignals{ get; set; }
+
+        /// <summary>
+        /// SSLPinningEnabled
+        /// </summary>
+        public static bool SSLPinningEnabled { get; set; }
+
+        public bool AllowRooted { get; set; }
+
+        private bool isRooted;
+        private RootCheck _rootCheck;
+
+        public JudoSDKManager ()
         {
 
+            _rootCheck = new RootCheck ();
+            isRooted = _rootCheck.IsRooted ();
         }
 
-        private JudoSDKManager()
-        {
-            _uIMethods = new UIMethods();
-            _nonUIMethods = new NonUIMethods();
-            _configuration = new Configuration();
-        }
+        private static JudoAndroidSDKAPI _judoSdkApi;
 
-        internal void SetJudoClient(IJudoPayApi judoClient)
-        {
-            lock (_clientLock)
-            {
-                _judoClient = judoClient;
+        private static bool _uiMode { get; set; }
+
+        /// <summary>
+        /// Enable UI Mode
+        /// By default this property is set to True
+        /// </summary>
+        public static bool UIMode {
+            get { return _uiMode; }
+            set {
+                if (value) {
+                    _judoSdkApi = new UIMethods ();
+
+                } else {
+                    _judoSdkApi = new NonUIMethods ();
+
+
+                  
+                }
+                _uiMode = value;
             }
         }
 
-        internal void SetEnvironment(JudoEnvironment environment)
+        public void Payment (PaymentViewModel payment, JudoSuccessCallback success, JudoFailureCallback failure, Activity context)
         {
-            lock (_clientLock)
-            {
-                _environment = environment;
-            }  
+            EvaluateRootCheck (failure);
+            var innerModel = payment.Clone ();         
+            _judoSdkApi.Payment (innerModel, success, failure, context);
+
+        }
+
+        public void PreAuth (PaymentViewModel preAuthorisation, JudoSuccessCallback success, JudoFailureCallback failure, Activity context)
+        {
+            EvaluateRootCheck (failure);
+            var innerModel = preAuthorisation.Clone ();
+            _judoSdkApi.PreAuth (innerModel, success, failure, context);
+          
+        }
+
+        public void TokenPayment (TokenPaymentViewModel payment, JudoSuccessCallback success, JudoFailureCallback failure, Activity context)
+        {
+            EvaluateRootCheck (failure);
+            var innerModel = payment.Clone ();         
+            _judoSdkApi.TokenPayment (innerModel, success, failure, context);
+        }
+
+
+
+        public void TokenPreAuth (TokenPaymentViewModel payment, JudoSuccessCallback success, JudoFailureCallback failure, Activity context)
+        {
+            EvaluateRootCheck (failure);
+            var innerModel = payment.Clone ();         
+            _judoSdkApi.TokenPreAuth (innerModel, success, failure, context);
+        }
+
+        public void RegisterCard (PaymentViewModel registerCard, JudoSuccessCallback success, JudoFailureCallback failure, Activity context)
+        {
+            if (registerCard.Amount == 0) {
+                registerCard.Amount = 1.01m;
+            }
+            EvaluateRootCheck (failure);
+            var innerModel = registerCard.Clone ();         
+            _judoSdkApi.RegisterCard (innerModel, success, failure, context); 
         }
 
         internal static string DEBUG_TAG = "com.judopay.android";
 
-        internal static string CardHintFormat(CardBase.CardType cardType)
+        internal static string CardHintFormat (CardType cardType)
         {
-            switch (cardType)
-            {
-                case CardBase.CardType.AMEX:
-                    return AMEX_CARD_FORMAT_HINT;
-                default:
-                    return REGULAR_CARD_FORMAT_HINT;
+            switch (cardType) {
+            case CardType.AMEX:
+                return AMEX_CARD_FORMAT_HINT;
+            default:
+                return REGULAR_CARD_FORMAT_HINT;
             }
         }
 
-        internal static int GetCardResourceId(Context context, CardBase.CardType cardType, bool showFront)
+        internal static int GetCardResourceId (Context context, CardType cardType, bool showFront)
         {
-            if (showFront)
-            {
-                switch (cardType)
-                {
-                    case CardBase.CardType.VISA:
-                        return Resource.Drawable.ic_card_visa;
-                    case CardBase.CardType.MASTERCARD:
-                        return Resource.Drawable.ic_card_mastercard;
-                    case CardBase.CardType.AMEX:
-                        return Resource.Drawable.ic_card_amex;
-                    case CardBase.CardType.MASTRO:
-                        return Resource.Drawable.ic_card_maestro;
-                    case CardBase.CardType.UNKNOWN:
-                    default:
-                        return Resource.Drawable.ic_card_unknown;
+            if (showFront) {
+                switch (cardType) {
+                case CardType.VISA:
+                    return Resource.Drawable.ic_card_visa;
+                case CardType.MASTERCARD:
+                    return Resource.Drawable.ic_card_mastercard;
+                case CardType.AMEX:
+                    return Resource.Drawable.ic_card_amex;
+                case CardType.MAESTRO:
+                    return Resource.Drawable.ic_card_maestro;
+                case CardType.UNKNOWN:
+                default:
+                    return Resource.Drawable.ic_card_unknown;
                 }
-            }
-            else
-            {
-                switch (cardType)
-                {
-                    case CardBase.CardType.AMEX:
-                        return Resource.Drawable.ic_card_cv2_amex;
-                    default:
-                        return Resource.Drawable.ic_card_cv2;
+            } else {
+                switch (cardType) {
+                case CardType.AMEX:
+                    return Resource.Drawable.ic_card_cv2_amex;
+                default:
+                    return Resource.Drawable.ic_card_cv2;
                 }
             }
         }
 
-        internal static string GetCardHintFormat(CardBase.CardType cardType)
+        internal static string GetCardHintFormat (CardType cardType)
         {
-            switch (cardType)
-            {
-                case CardBase.CardType.AMEX:
-                    return AMEX_CARD_FORMAT_HINT;
-                default:
-                    return REGULAR_CARD_FORMAT_HINT;
+            switch (cardType) {
+            case CardType.AMEX:
+                return AMEX_CARD_FORMAT_HINT;
+            default:
+                return REGULAR_CARD_FORMAT_HINT;
             }
         }
 
-        internal static string GetExpiryAndValidationHintFormat(CardBase.CardType cardType)
+        internal static string GetExpiryAndValidationHintFormat (CardType cardType)
         {
-            switch (cardType)
-            {
-                case CardBase.CardType.AMEX:
-                    return AMEX_EXPIRY_AND_VALIDATION_FORMAT_HINT;
-                default:
-                    return REGULAR_EXPIRY_AND_VALIDATION_FORMAT_HINT;
+            switch (cardType) {
+            case CardType.AMEX:
+                return AMEX_EXPIRY_AND_VALIDATION_FORMAT_HINT;
+            default:
+                return REGULAR_EXPIRY_AND_VALIDATION_FORMAT_HINT;
             }
         }
 
-        internal static string GetExpiryAndValidationErrorMessage(CardBase.CardType cardType)
+        internal static string GetExpiryAndValidationErrorMessage (CardType cardType)
         {
-            switch (cardType)
-            {
-                case CardBase.CardType.AMEX:
-                    return AMEX_EXPIRY_AND_VALIDATION_ERROR_MESSAGE;
-                default:
-                    return REGULAR_EXPIRY_AND_VALIDATION_ERROR_MESSAGE;
+            switch (cardType) {
+            case CardType.AMEX:
+                return AMEX_EXPIRY_AND_VALIDATION_ERROR_MESSAGE;
+            default:
+                return REGULAR_EXPIRY_AND_VALIDATION_ERROR_MESSAGE;
             }
         }
 
-        internal static Intent CreateErrorIntent(string message, Exception exception, JudoApiErrorModel apiErrorModel)
+        internal static Intent CreateErrorIntent (string message, Exception exception, JudoApiErrorModel apiErrorModel)
         {
-            Intent intent = new Intent();
-            intent.PutExtra(JUDO_ERROR_MESSAGE, message);
-            intent.PutExtra(JUDO_ERROR_EXCEPTION, new Error(exception, apiErrorModel));
+            Intent intent = new Intent ();
+            intent.PutExtra (JUDO_ERROR_MESSAGE, message);
+            intent.PutExtra (JUDO_ERROR_EXCEPTION, JsonConvert.SerializeObject (new JudoError (exception, apiErrorModel)));
 
             return intent;
         }
 
-        internal static JObject GetClientDetails(Context context)
+        void EvaluateRootCheck (JudoFailureCallback failure)
         {
-            return JObject.FromObject(ClientDetailsProvider.GetClientDetails(context));
+            if (!AllowRooted && isRooted) {
+                failure (new JudoError () {
+                    Exception = new Exception ("Users Device is rooted and app is configured to block calls from rooted Device"),
+                    ApiError = null
+                });
+            }
         }
-
-		internal static string GetSDKVersion ()
-		{
-			System.Reflection.Assembly assembly = System.Reflection.Assembly.GetExecutingAssembly();
-			FileVersionInfo fvi = FileVersionInfo.GetVersionInfo(assembly.Location);
-			string version = fvi.FileVersion;
-
-			return "Xamarin-Android-" + version;
-		}
+            
     }
+
+
 }

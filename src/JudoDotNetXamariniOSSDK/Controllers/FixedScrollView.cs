@@ -1,16 +1,10 @@
 ﻿using System;
-using System.Drawing;
-
-
-#if __UNIFIED__
 using Foundation;
 using UIKit;
-using CoreFoundation;
-using CoreGraphics;
+#if __UNIFIED__
 // Mappings Unified CoreGraphic classes to MonoTouch classes
 using RectangleF = global::CoreGraphics.CGRect;
-using SizeF = global::CoreGraphics.CGSize;
-using PointF = global::CoreGraphics.CGPoint;
+
 #else
 using MonoTouch.UIKit;
 using MonoTouch.Foundation;
@@ -23,7 +17,7 @@ using nuint = global::System.UInt32;
 
 #endif
 
-namespace JudoDotNetXamariniOSSDK
+namespace JudoDotNetXamariniOSSDK.Controllers
 {
 	[Register("FixedScrollView")]
 	internal class FixedScrollView :UIScrollView

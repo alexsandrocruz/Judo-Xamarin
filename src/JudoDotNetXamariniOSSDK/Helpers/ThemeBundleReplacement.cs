@@ -1,10 +1,9 @@
-﻿
-using System;
+﻿using System;
 using System.Threading;
 using Foundation;
 using UIKit;
 
-namespace JudoDotNetXamariniOSSDK
+namespace JudoDotNetXamariniOSSDK.Helpers
 {
 	public enum BundledOrReplacementOptions { Bundled, BundledOrReplacement };
 

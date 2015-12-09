@@ -1,106 +1,100 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-using Android.App;
 using Android.Content;
-using Android.OS;
-using Android.Runtime;
 using Android.Util;
 using Android.Views;
 using Android.Widget;
-using Java.Security;
-using JudoDotNetXamarinSDK.Utils;
+using JudoDotNetXamarinAndroidSDK.Utils;
 
-namespace JudoDotNetXamarinSDK.Ui
+namespace JudoDotNetXamarinAndroidSDK.Ui
 {
     public class StartDateIssueNumberEntryView : LinearLayout
     {
         public interface IEntryCompleteListener
         {
-            void OnStartDateEntered(string startDate);
-            void OnIssueNumberEntered(string issueNumber);
+            void OnStartDateEntered (string startDate);
+
+            void OnIssueNumberEntered (string issueNumber);
         }
 
         private StartDateEditText startDateEditText;
         private IssueNumberEditText issueNumberEditText;
+
         public IEntryCompleteListener EntryCompleteListener { get; set; }
 
 
-        public StartDateIssueNumberEntryView(Context context) : base(context)
+        public StartDateIssueNumberEntryView (Context context) : base (context)
         {
-            Init();
+            Init ();
         }
 
-        public StartDateIssueNumberEntryView(Context context, IAttributeSet attrs) : base(context, attrs)
+        public StartDateIssueNumberEntryView (Context context, IAttributeSet attrs) : base (context, attrs)
         {
-            Init();
+            Init ();
         }
 
-        private void Init()
+        private void Init ()
         {
             Orientation = Orientation.Horizontal;
-            SetGravity(GravityFlags.Center);
+            SetGravity (GravityFlags.Center);
             WeightSum = 2;
-            SetPadding(0, UiUtils.ToPixels(Context, 16), 0, 0);
+            SetPadding (0, UiUtils.ToPixels (Context, 16), 0, 0);
 
-            LayoutInflater.From(Context).Inflate(Resource.Layout.startdate_and_issuenumber, this, true);
+            LayoutInflater.From (Context).Inflate (Resource.Layout.startdate_and_issuenumber, this, true);
 
-            startDateEditText = FindViewById<StartDateEditText>(Resource.Id.startDateEditText);
-            startDateEditText.OnEntryComplete += startDate =>
-            {
-                if (EntryCompleteListener != null)
-                {
-                    EntryCompleteListener.OnStartDateEntered(startDate);
+            startDateEditText = FindViewById<StartDateEditText> (Resource.Id.startDateEditText);
+            startDateEditText.OnEntryComplete += startDate => {
+                if (EntryCompleteListener != null) {
+                    EntryCompleteListener.OnStartDateEntered (startDate);
                 }
 
                 //SetFocuts to the issue
-                issueNumberEditText.RequestFocus();
+                issueNumberEditText.RequestFocus ();
             };
 
-            issueNumberEditText = FindViewById<IssueNumberEditText>(Resource.Id.issueNumberEditText);
+            issueNumberEditText = FindViewById<IssueNumberEditText> (Resource.Id.issueNumberEditText);
 
             //because the issue number could be 1,2, or 3 char, we have to listen for focus
-            issueNumberEditText.FocusChange += (sender, args) =>
-            {
-                if (!args.HasFocus)
-                {
-                    if (!String.IsNullOrWhiteSpace(issueNumberEditText.GetText()))
-                    {
-                        var issueStart = issueNumberEditText.GetText();
-                        if (ValidationHelper.CheckIssueNumber(issueStart) && EntryCompleteListener != null)
-                        {
-                            EntryCompleteListener.OnIssueNumberEntered(issueStart);
+            issueNumberEditText.FocusChange += (sender, args) => {
+                if (!args.HasFocus) {
+                    if (!String.IsNullOrWhiteSpace (issueNumberEditText.GetText ())) {
+                        var issueStart = issueNumberEditText.GetText ();
+                        if (ValidationHelper.CheckIssueNumber (issueStart) && EntryCompleteListener != null) {
+                            EntryCompleteListener.OnIssueNumberEntered (issueStart);
                         }
                     }
                 }
             };
         }
 
-        public string GetStartDate()
+        public string GetStartDate ()
         {
-            return startDateEditText.GetText();
+            return startDateEditText.GetText ();
         }
 
-        public string GetIssueNumber()
+        public string GetIssueNumber ()
         {
-            return issueNumberEditText.GetText();
+            return issueNumberEditText.GetText ();
         }
 
-        public bool Validate()
+        public bool Validate ()
         {
-            var issueNumberStr = issueNumberEditText.GetText();
+            var issueNumberStr = issueNumberEditText.GetText ();
 
             int issueNumber;
 
-            return int.TryParse(issueNumberStr, out issueNumber);
+            return int.TryParse (issueNumberStr, out issueNumber);
         }
 
-        public void Reset()
+        public void RestoreState (string startDate, string issueNumber)
         {
-            startDateEditText.SetText(String.Empty);
-            issueNumberEditText.SetText(String.Empty);
+            startDateEditText.SetText (startDate);
+            issueNumberEditText.SetText (issueNumber);
+        }
+
+        public void Reset ()
+        {
+            startDateEditText.SetText (String.Empty);
+            issueNumberEditText.SetText (String.Empty);
         }
     }
 }

@@ -1,18 +1,13 @@
 ﻿using System;
-using System.Drawing;
-using System.Collections.Generic;
-using UIKit;
+using CoreGraphics;
 using Foundation;
 using ObjCRuntime;
-using CoreGraphics;
+using UIKit;
 using RectangleF = global::CoreGraphics.CGRect;
-using SizeF = global::CoreGraphics.CGSize;
 using PointF = global::CoreGraphics.CGPoint;
-using WatchKit;
 
 
-
-namespace JudoDotNetXamariniOSSDK
+namespace JudoDotNetXamariniOSSDK.Views
 {
 	[Register ("SlideUpMenu")]
 	public partial class SlideUpMenu :UIView
@@ -36,20 +31,20 @@ namespace JudoDotNetXamariniOSSDK
 		{
 			
 			base.WillMoveToSuperview (newsuper);
-			SetUpToggle (AVSSwitch, JudoSDKManager.AVSEnabled, () => {
-				JudoSDKManager.AVSEnabled = !JudoSDKManager.AVSEnabled;
+			SetUpToggle (AVSSwitch, JudoSDKManager.Instance.AVSEnabled, () => {
+				JudoSDKManager.Instance.AVSEnabled = !JudoSDKManager.Instance.AVSEnabled;
 			});
-			SetUpToggle (ThreeDSwitch, JudoSDKManager.ThreeDSecureEnabled, () => {
-				JudoSDKManager.ThreeDSecureEnabled = !JudoSDKManager.ThreeDSecureEnabled;
+			SetUpToggle (ThreeDSwitch, JudoSDKManager.Instance.ThreeDSecureEnabled, () => {
+				JudoSDKManager.Instance.ThreeDSecureEnabled = !JudoSDKManager.Instance.ThreeDSecureEnabled;
 			});
-			SetUpToggle (RiskSwitch, JudoSDKManager.RiskSignals, () => {
-				JudoSDKManager.RiskSignals = !JudoSDKManager.RiskSignals;
+			SetUpToggle (RiskSwitch, JudoSDKManager.Instance.RiskSignals, () => {
+				JudoSDKManager.Instance.RiskSignals = !JudoSDKManager.Instance.RiskSignals;
 			});
-			SetUpToggle (MaestroSwitch, JudoSDKManager.MaestroAccepted, () => {
-				JudoSDKManager.MaestroAccepted = !JudoSDKManager.MaestroAccepted;
+			SetUpToggle (MaestroSwitch, JudoSDKManager.Instance.MaestroAccepted, () => {
+				JudoSDKManager.Instance.MaestroAccepted = !JudoSDKManager.Instance.MaestroAccepted;
 			});
-			SetUpToggle (AmexSwitch, JudoSDKManager.AmExAccepted, () => {
-				JudoSDKManager.AmExAccepted = !JudoSDKManager.AmExAccepted;
+			SetUpToggle (AmexSwitch, JudoSDKManager.Instance.AmExAccepted, () => {
+				JudoSDKManager.Instance.AmExAccepted = !JudoSDKManager.Instance.AmExAccepted;
 			});
 			SetUpToggle (NoneUISwitch, !JudoSDKManager.UIMode, () => {
 				JudoSDKManager.UIMode = !JudoSDKManager.UIMode;
@@ -98,6 +93,7 @@ namespace JudoDotNetXamariniOSSDK
 
 		public override void AwakeFromNib ()
 		{
+
 			var arr = NSBundle.MainBundle.LoadNib ("SlideUpMenu", this, null);
 			var v = Runtime.GetNSObject (arr.ValueAt (0)) as UIView;
 			v.Frame = new RectangleF (0, 0, Frame.Width, Frame.Height);

@@ -26,267 +26,267 @@ namespace Android.Xamarin.SampleApp
 		
 		public static void UpdateIdValues()
 		{
-			global::JudoDotNetXamarinSDK.Resource.Animation.fade_in = global::Android.Xamarin.SampleApp.Resource.Animation.fade_in;
-			global::JudoDotNetXamarinSDK.Resource.Animation.fade_in_out = global::Android.Xamarin.SampleApp.Resource.Animation.fade_in_out;
-			global::JudoDotNetXamarinSDK.Resource.Animation.fade_out = global::Android.Xamarin.SampleApp.Resource.Animation.fade_out;
-			global::JudoDotNetXamarinSDK.Resource.Animation.flipping_in = global::Android.Xamarin.SampleApp.Resource.Animation.flipping_in;
-			global::JudoDotNetXamarinSDK.Resource.Animation.flipping_in_vert = global::Android.Xamarin.SampleApp.Resource.Animation.flipping_in_vert;
-			global::JudoDotNetXamarinSDK.Resource.Animation.flipping_out = global::Android.Xamarin.SampleApp.Resource.Animation.flipping_out;
-			global::JudoDotNetXamarinSDK.Resource.Animation.flipping_out_vert = global::Android.Xamarin.SampleApp.Resource.Animation.flipping_out_vert;
-			global::JudoDotNetXamarinSDK.Resource.Array.avs_countries = global::Android.Xamarin.SampleApp.Resource.Array.avs_countries;
-			global::JudoDotNetXamarinSDK.Resource.Array.avs_countries_postcode_label_text = global::Android.Xamarin.SampleApp.Resource.Array.avs_countries_postcode_label_text;
-			global::JudoDotNetXamarinSDK.Resource.Color.accent = global::Android.Xamarin.SampleApp.Resource.Color.accent;
-			global::JudoDotNetXamarinSDK.Resource.Color.action_bar_bg = global::Android.Xamarin.SampleApp.Resource.Color.action_bar_bg;
-			global::JudoDotNetXamarinSDK.Resource.Color.button_main_bg = global::Android.Xamarin.SampleApp.Resource.Color.button_main_bg;
-			global::JudoDotNetXamarinSDK.Resource.Color.button_main_bg_ripple = global::Android.Xamarin.SampleApp.Resource.Color.button_main_bg_ripple;
-			global::JudoDotNetXamarinSDK.Resource.Color.button_text = global::Android.Xamarin.SampleApp.Resource.Color.button_text;
-			global::JudoDotNetXamarinSDK.Resource.Color.cancel_bg = global::Android.Xamarin.SampleApp.Resource.Color.cancel_bg;
-			global::JudoDotNetXamarinSDK.Resource.Color.cancel_bg_ripple = global::Android.Xamarin.SampleApp.Resource.Color.cancel_bg_ripple;
-			global::JudoDotNetXamarinSDK.Resource.Color.cancel_text = global::Android.Xamarin.SampleApp.Resource.Color.cancel_text;
-			global::JudoDotNetXamarinSDK.Resource.Color.card_off = global::Android.Xamarin.SampleApp.Resource.Color.card_off;
-			global::JudoDotNetXamarinSDK.Resource.Color.card_on = global::Android.Xamarin.SampleApp.Resource.Color.card_on;
-			global::JudoDotNetXamarinSDK.Resource.Color.debug0 = global::Android.Xamarin.SampleApp.Resource.Color.debug0;
-			global::JudoDotNetXamarinSDK.Resource.Color.debug1 = global::Android.Xamarin.SampleApp.Resource.Color.debug1;
-			global::JudoDotNetXamarinSDK.Resource.Color.debug2 = global::Android.Xamarin.SampleApp.Resource.Color.debug2;
-			global::JudoDotNetXamarinSDK.Resource.Color.debug3 = global::Android.Xamarin.SampleApp.Resource.Color.debug3;
-			global::JudoDotNetXamarinSDK.Resource.Color.debug4 = global::Android.Xamarin.SampleApp.Resource.Color.debug4;
-			global::JudoDotNetXamarinSDK.Resource.Color.debug5 = global::Android.Xamarin.SampleApp.Resource.Color.debug5;
-			global::JudoDotNetXamarinSDK.Resource.Color.debug6 = global::Android.Xamarin.SampleApp.Resource.Color.debug6;
-			global::JudoDotNetXamarinSDK.Resource.Color.default_text = global::Android.Xamarin.SampleApp.Resource.Color.default_text;
-			global::JudoDotNetXamarinSDK.Resource.Color.error_bg = global::Android.Xamarin.SampleApp.Resource.Color.error_bg;
-			global::JudoDotNetXamarinSDK.Resource.Color.error_text = global::Android.Xamarin.SampleApp.Resource.Color.error_text;
-			global::JudoDotNetXamarinSDK.Resource.Color.hint_text = global::Android.Xamarin.SampleApp.Resource.Color.hint_text;
-			global::JudoDotNetXamarinSDK.Resource.Color.list_cell_bg = global::Android.Xamarin.SampleApp.Resource.Color.list_cell_bg;
-			global::JudoDotNetXamarinSDK.Resource.Color.list_divider = global::Android.Xamarin.SampleApp.Resource.Color.list_divider;
-			global::JudoDotNetXamarinSDK.Resource.Color.list_selector_pressed = global::Android.Xamarin.SampleApp.Resource.Color.list_selector_pressed;
-			global::JudoDotNetXamarinSDK.Resource.Color.normal_text = global::Android.Xamarin.SampleApp.Resource.Color.normal_text;
-			global::JudoDotNetXamarinSDK.Resource.Color.page_bg = global::Android.Xamarin.SampleApp.Resource.Color.page_bg;
-			global::JudoDotNetXamarinSDK.Resource.Color.page_divider = global::Android.Xamarin.SampleApp.Resource.Color.page_divider;
-			global::JudoDotNetXamarinSDK.Resource.Color.primary = global::Android.Xamarin.SampleApp.Resource.Color.primary;
-			global::JudoDotNetXamarinSDK.Resource.Color.primary_dark = global::Android.Xamarin.SampleApp.Resource.Color.primary_dark;
-			global::JudoDotNetXamarinSDK.Resource.Color.prog_dialog_bg = global::Android.Xamarin.SampleApp.Resource.Color.prog_dialog_bg;
-			global::JudoDotNetXamarinSDK.Resource.Color.splash_bg = global::Android.Xamarin.SampleApp.Resource.Color.splash_bg;
-			global::JudoDotNetXamarinSDK.Resource.Color.white_transparent = global::Android.Xamarin.SampleApp.Resource.Color.white_transparent;
-			global::JudoDotNetXamarinSDK.Resource.Dimension.action_bar_icon_right_padding = global::Android.Xamarin.SampleApp.Resource.Dimension.action_bar_icon_right_padding;
-			global::JudoDotNetXamarinSDK.Resource.Dimension.activity_horizontal_margin = global::Android.Xamarin.SampleApp.Resource.Dimension.activity_horizontal_margin;
-			global::JudoDotNetXamarinSDK.Resource.Dimension.activity_vertical_margin = global::Android.Xamarin.SampleApp.Resource.Dimension.activity_vertical_margin;
-			global::JudoDotNetXamarinSDK.Resource.Dimension.avs_container_height = global::Android.Xamarin.SampleApp.Resource.Dimension.avs_container_height;
-			global::JudoDotNetXamarinSDK.Resource.Dimension.avs_msg_height = global::Android.Xamarin.SampleApp.Resource.Dimension.avs_msg_height;
-			global::JudoDotNetXamarinSDK.Resource.Dimension.backgroundhinttextview_error_vertical_padding = global::Android.Xamarin.SampleApp.Resource.Dimension.backgroundhinttextview_error_vertical_padding;
-			global::JudoDotNetXamarinSDK.Resource.Dimension.backgroundhinttextview_horizontal_padding = global::Android.Xamarin.SampleApp.Resource.Dimension.backgroundhinttextview_horizontal_padding;
-			global::JudoDotNetXamarinSDK.Resource.Dimension.button_text_size = global::Android.Xamarin.SampleApp.Resource.Dimension.button_text_size;
-			global::JudoDotNetXamarinSDK.Resource.Dimension.cancel_button_height = global::Android.Xamarin.SampleApp.Resource.Dimension.cancel_button_height;
-			global::JudoDotNetXamarinSDK.Resource.Dimension.cardnumber_container_height = global::Android.Xamarin.SampleApp.Resource.Dimension.cardnumber_container_height;
-			global::JudoDotNetXamarinSDK.Resource.Dimension.default_backgroundhinttextview_container_height = global::Android.Xamarin.SampleApp.Resource.Dimension.default_backgroundhinttextview_container_height;
-			global::JudoDotNetXamarinSDK.Resource.Dimension.default_text_size = global::Android.Xamarin.SampleApp.Resource.Dimension.default_text_size;
-			global::JudoDotNetXamarinSDK.Resource.Dimension.error_text_size = global::Android.Xamarin.SampleApp.Resource.Dimension.error_text_size;
-			global::JudoDotNetXamarinSDK.Resource.Dimension.general_padding = global::Android.Xamarin.SampleApp.Resource.Dimension.general_padding;
-			global::JudoDotNetXamarinSDK.Resource.Dimension.small_text_size = global::Android.Xamarin.SampleApp.Resource.Dimension.small_text_size;
-			global::JudoDotNetXamarinSDK.Resource.Dimension.startdate_container_height = global::Android.Xamarin.SampleApp.Resource.Dimension.startdate_container_height;
-			global::JudoDotNetXamarinSDK.Resource.Dimension.title_text_size = global::Android.Xamarin.SampleApp.Resource.Dimension.title_text_size;
-			global::JudoDotNetXamarinSDK.Resource.Drawable.ab_solid_judo_payments = global::Android.Xamarin.SampleApp.Resource.Drawable.ab_solid_judo_payments;
-			global::JudoDotNetXamarinSDK.Resource.Drawable.app_icon = global::Android.Xamarin.SampleApp.Resource.Drawable.app_icon;
-			global::JudoDotNetXamarinSDK.Resource.Drawable.btn_default_disabled_focused_holo_light = global::Android.Xamarin.SampleApp.Resource.Drawable.btn_default_disabled_focused_holo_light;
-			global::JudoDotNetXamarinSDK.Resource.Drawable.btn_default_disabled_holo_light = global::Android.Xamarin.SampleApp.Resource.Drawable.btn_default_disabled_holo_light;
-			global::JudoDotNetXamarinSDK.Resource.Drawable.btn_default_focused_holo_light = global::Android.Xamarin.SampleApp.Resource.Drawable.btn_default_focused_holo_light;
-			global::JudoDotNetXamarinSDK.Resource.Drawable.btn_default_normal_holo_light = global::Android.Xamarin.SampleApp.Resource.Drawable.btn_default_normal_holo_light;
-			global::JudoDotNetXamarinSDK.Resource.Drawable.btn_default_pressed_holo_light = global::Android.Xamarin.SampleApp.Resource.Drawable.btn_default_pressed_holo_light;
-			global::JudoDotNetXamarinSDK.Resource.Drawable.btn_settings = global::Android.Xamarin.SampleApp.Resource.Drawable.btn_settings;
-			global::JudoDotNetXamarinSDK.Resource.Drawable.btn_settings_pressed = global::Android.Xamarin.SampleApp.Resource.Drawable.btn_settings_pressed;
-			global::JudoDotNetXamarinSDK.Resource.Drawable.btn_yellow_disabled_focused_holo_light = global::Android.Xamarin.SampleApp.Resource.Drawable.btn_yellow_disabled_focused_holo_light;
-			global::JudoDotNetXamarinSDK.Resource.Drawable.btn_yellow_disabled_holo_light = global::Android.Xamarin.SampleApp.Resource.Drawable.btn_yellow_disabled_holo_light;
-			global::JudoDotNetXamarinSDK.Resource.Drawable.btn_yellow_focused_holo_light = global::Android.Xamarin.SampleApp.Resource.Drawable.btn_yellow_focused_holo_light;
-			global::JudoDotNetXamarinSDK.Resource.Drawable.btn_yellow_normal_holo_light = global::Android.Xamarin.SampleApp.Resource.Drawable.btn_yellow_normal_holo_light;
-			global::JudoDotNetXamarinSDK.Resource.Drawable.btn_yellow_pressed_holo_light = global::Android.Xamarin.SampleApp.Resource.Drawable.btn_yellow_pressed_holo_light;
-			global::JudoDotNetXamarinSDK.Resource.Drawable.button_settings = global::Android.Xamarin.SampleApp.Resource.Drawable.button_settings;
-			global::JudoDotNetXamarinSDK.Resource.Drawable.cab_background_top_judo_payments = global::Android.Xamarin.SampleApp.Resource.Drawable.cab_background_top_judo_payments;
-			global::JudoDotNetXamarinSDK.Resource.Drawable.edit_text_background = global::Android.Xamarin.SampleApp.Resource.Drawable.edit_text_background;
-			global::JudoDotNetXamarinSDK.Resource.Drawable.field = global::Android.Xamarin.SampleApp.Resource.Drawable.field;
-			global::JudoDotNetXamarinSDK.Resource.Drawable.gold_button_bg = global::Android.Xamarin.SampleApp.Resource.Drawable.gold_button_bg;
-			global::JudoDotNetXamarinSDK.Resource.Drawable.grey_button_bg = global::Android.Xamarin.SampleApp.Resource.Drawable.grey_button_bg;
-			global::JudoDotNetXamarinSDK.Resource.Drawable.ic_3ds_logos = global::Android.Xamarin.SampleApp.Resource.Drawable.ic_3ds_logos;
-			global::JudoDotNetXamarinSDK.Resource.Drawable.ic_actionbar_bg_shadow_light = global::Android.Xamarin.SampleApp.Resource.Drawable.ic_actionbar_bg_shadow_light;
-			global::JudoDotNetXamarinSDK.Resource.Drawable.ic_app_icon = global::Android.Xamarin.SampleApp.Resource.Drawable.ic_app_icon;
-			global::JudoDotNetXamarinSDK.Resource.Drawable.ic_card_amex = global::Android.Xamarin.SampleApp.Resource.Drawable.ic_card_amex;
-			global::JudoDotNetXamarinSDK.Resource.Drawable.ic_card_cv2 = global::Android.Xamarin.SampleApp.Resource.Drawable.ic_card_cv2;
-			global::JudoDotNetXamarinSDK.Resource.Drawable.ic_card_cv2_amex = global::Android.Xamarin.SampleApp.Resource.Drawable.ic_card_cv2_amex;
-			global::JudoDotNetXamarinSDK.Resource.Drawable.ic_card_large_amex = global::Android.Xamarin.SampleApp.Resource.Drawable.ic_card_large_amex;
-			global::JudoDotNetXamarinSDK.Resource.Drawable.ic_card_large_cv2 = global::Android.Xamarin.SampleApp.Resource.Drawable.ic_card_large_cv2;
-			global::JudoDotNetXamarinSDK.Resource.Drawable.ic_card_large_cv2_amex = global::Android.Xamarin.SampleApp.Resource.Drawable.ic_card_large_cv2_amex;
-			global::JudoDotNetXamarinSDK.Resource.Drawable.ic_card_large_maestro = global::Android.Xamarin.SampleApp.Resource.Drawable.ic_card_large_maestro;
-			global::JudoDotNetXamarinSDK.Resource.Drawable.ic_card_large_mastercard = global::Android.Xamarin.SampleApp.Resource.Drawable.ic_card_large_mastercard;
-			global::JudoDotNetXamarinSDK.Resource.Drawable.ic_card_large_unknown = global::Android.Xamarin.SampleApp.Resource.Drawable.ic_card_large_unknown;
-			global::JudoDotNetXamarinSDK.Resource.Drawable.ic_card_large_visa = global::Android.Xamarin.SampleApp.Resource.Drawable.ic_card_large_visa;
-			global::JudoDotNetXamarinSDK.Resource.Drawable.ic_card_logo_strip = global::Android.Xamarin.SampleApp.Resource.Drawable.ic_card_logo_strip;
-			global::JudoDotNetXamarinSDK.Resource.Drawable.ic_card_maestro = global::Android.Xamarin.SampleApp.Resource.Drawable.ic_card_maestro;
-			global::JudoDotNetXamarinSDK.Resource.Drawable.ic_card_mastercard = global::Android.Xamarin.SampleApp.Resource.Drawable.ic_card_mastercard;
-			global::JudoDotNetXamarinSDK.Resource.Drawable.ic_card_unknown = global::Android.Xamarin.SampleApp.Resource.Drawable.ic_card_unknown;
-			global::JudoDotNetXamarinSDK.Resource.Drawable.ic_card_visa = global::Android.Xamarin.SampleApp.Resource.Drawable.ic_card_visa;
-			global::JudoDotNetXamarinSDK.Resource.Drawable.ic_home = global::Android.Xamarin.SampleApp.Resource.Drawable.ic_home;
-			global::JudoDotNetXamarinSDK.Resource.Drawable.ic_info = global::Android.Xamarin.SampleApp.Resource.Drawable.ic_info;
-			global::JudoDotNetXamarinSDK.Resource.Drawable.ic_lock = global::Android.Xamarin.SampleApp.Resource.Drawable.ic_lock;
-			global::JudoDotNetXamarinSDK.Resource.Drawable.list_focused_judo_payments = global::Android.Xamarin.SampleApp.Resource.Drawable.list_focused_judo_payments;
-			global::JudoDotNetXamarinSDK.Resource.Drawable.list_pressed_judo_payments = global::Android.Xamarin.SampleApp.Resource.Drawable.list_pressed_judo_payments;
-			global::JudoDotNetXamarinSDK.Resource.Drawable.loader_1 = global::Android.Xamarin.SampleApp.Resource.Drawable.loader_1;
-			global::JudoDotNetXamarinSDK.Resource.Drawable.loader_10 = global::Android.Xamarin.SampleApp.Resource.Drawable.loader_10;
-			global::JudoDotNetXamarinSDK.Resource.Drawable.loader_11 = global::Android.Xamarin.SampleApp.Resource.Drawable.loader_11;
-			global::JudoDotNetXamarinSDK.Resource.Drawable.loader_12 = global::Android.Xamarin.SampleApp.Resource.Drawable.loader_12;
-			global::JudoDotNetXamarinSDK.Resource.Drawable.loader_2 = global::Android.Xamarin.SampleApp.Resource.Drawable.loader_2;
-			global::JudoDotNetXamarinSDK.Resource.Drawable.loader_3 = global::Android.Xamarin.SampleApp.Resource.Drawable.loader_3;
-			global::JudoDotNetXamarinSDK.Resource.Drawable.loader_4 = global::Android.Xamarin.SampleApp.Resource.Drawable.loader_4;
-			global::JudoDotNetXamarinSDK.Resource.Drawable.loader_5 = global::Android.Xamarin.SampleApp.Resource.Drawable.loader_5;
-			global::JudoDotNetXamarinSDK.Resource.Drawable.loader_6 = global::Android.Xamarin.SampleApp.Resource.Drawable.loader_6;
-			global::JudoDotNetXamarinSDK.Resource.Drawable.loader_7 = global::Android.Xamarin.SampleApp.Resource.Drawable.loader_7;
-			global::JudoDotNetXamarinSDK.Resource.Drawable.loader_8 = global::Android.Xamarin.SampleApp.Resource.Drawable.loader_8;
-			global::JudoDotNetXamarinSDK.Resource.Drawable.loader_9 = global::Android.Xamarin.SampleApp.Resource.Drawable.loader_9;
-			global::JudoDotNetXamarinSDK.Resource.Drawable.main_button_background = global::Android.Xamarin.SampleApp.Resource.Drawable.main_button_background;
-			global::JudoDotNetXamarinSDK.Resource.Drawable.progress_spinner = global::Android.Xamarin.SampleApp.Resource.Drawable.progress_spinner;
-			global::JudoDotNetXamarinSDK.Resource.Drawable.secondary_button_background = global::Android.Xamarin.SampleApp.Resource.Drawable.secondary_button_background;
-			global::JudoDotNetXamarinSDK.Resource.Drawable.selectable_background_judo_payments = global::Android.Xamarin.SampleApp.Resource.Drawable.selectable_background_judo_payments;
-			global::JudoDotNetXamarinSDK.Resource.Drawable.spinner_background_judo_payments = global::Android.Xamarin.SampleApp.Resource.Drawable.spinner_background_judo_payments;
-			global::JudoDotNetXamarinSDK.Resource.Drawable.spinner_default = global::Android.Xamarin.SampleApp.Resource.Drawable.spinner_default;
-			global::JudoDotNetXamarinSDK.Resource.Drawable.spinner_disabled = global::Android.Xamarin.SampleApp.Resource.Drawable.spinner_disabled;
-			global::JudoDotNetXamarinSDK.Resource.Drawable.spinner_focused = global::Android.Xamarin.SampleApp.Resource.Drawable.spinner_focused;
-			global::JudoDotNetXamarinSDK.Resource.Drawable.spinner_list_activated_holo = global::Android.Xamarin.SampleApp.Resource.Drawable.spinner_list_activated_holo;
-			global::JudoDotNetXamarinSDK.Resource.Drawable.spinner_list_focused_holo = global::Android.Xamarin.SampleApp.Resource.Drawable.spinner_list_focused_holo;
-			global::JudoDotNetXamarinSDK.Resource.Drawable.spinner_list_longpressed_holo = global::Android.Xamarin.SampleApp.Resource.Drawable.spinner_list_longpressed_holo;
-			global::JudoDotNetXamarinSDK.Resource.Drawable.spinner_list_pressed_holo_light = global::Android.Xamarin.SampleApp.Resource.Drawable.spinner_list_pressed_holo_light;
-			global::JudoDotNetXamarinSDK.Resource.Drawable.spinner_list_selector_disabled_holo_light = global::Android.Xamarin.SampleApp.Resource.Drawable.spinner_list_selector_disabled_holo_light;
-			global::JudoDotNetXamarinSDK.Resource.Drawable.spinner_pressed = global::Android.Xamarin.SampleApp.Resource.Drawable.spinner_pressed;
-			global::JudoDotNetXamarinSDK.Resource.Drawable.textfield_activated_holo_light = global::Android.Xamarin.SampleApp.Resource.Drawable.textfield_activated_holo_light;
-			global::JudoDotNetXamarinSDK.Resource.Drawable.textfield_default_holo_light = global::Android.Xamarin.SampleApp.Resource.Drawable.textfield_default_holo_light;
-			global::JudoDotNetXamarinSDK.Resource.Drawable.textfield_disabled_focused_holo_light = global::Android.Xamarin.SampleApp.Resource.Drawable.textfield_disabled_focused_holo_light;
-			global::JudoDotNetXamarinSDK.Resource.Drawable.textfield_disabled_holo_light = global::Android.Xamarin.SampleApp.Resource.Drawable.textfield_disabled_holo_light;
-			global::JudoDotNetXamarinSDK.Resource.Drawable.textfield_focused_holo_light = global::Android.Xamarin.SampleApp.Resource.Drawable.textfield_focused_holo_light;
-			global::JudoDotNetXamarinSDK.Resource.Id.addressLine1 = global::Android.Xamarin.SampleApp.Resource.Id.addressLine1;
-			global::JudoDotNetXamarinSDK.Resource.Id.addressLine2 = global::Android.Xamarin.SampleApp.Resource.Id.addressLine2;
-			global::JudoDotNetXamarinSDK.Resource.Id.addressLine3 = global::Android.Xamarin.SampleApp.Resource.Id.addressLine3;
-			global::JudoDotNetXamarinSDK.Resource.Id.addressPostCode = global::Android.Xamarin.SampleApp.Resource.Id.addressPostCode;
-			global::JudoDotNetXamarinSDK.Resource.Id.addressTown = global::Android.Xamarin.SampleApp.Resource.Id.addressTown;
-			global::JudoDotNetXamarinSDK.Resource.Id.avsEntryView = global::Android.Xamarin.SampleApp.Resource.Id.avsEntryView;
-			global::JudoDotNetXamarinSDK.Resource.Id.avsMsgText = global::Android.Xamarin.SampleApp.Resource.Id.avsMsgText;
-			global::JudoDotNetXamarinSDK.Resource.Id.cancelButton = global::Android.Xamarin.SampleApp.Resource.Id.cancelButton;
-			global::JudoDotNetXamarinSDK.Resource.Id.cardEntryView = global::Android.Xamarin.SampleApp.Resource.Id.cardEntryView;
-			global::JudoDotNetXamarinSDK.Resource.Id.countrySpinner = global::Android.Xamarin.SampleApp.Resource.Id.countrySpinner;
-			global::JudoDotNetXamarinSDK.Resource.Id.cv2EntryView = global::Android.Xamarin.SampleApp.Resource.Id.cv2EntryView;
-			global::JudoDotNetXamarinSDK.Resource.Id.hintTextView = global::Android.Xamarin.SampleApp.Resource.Id.hintTextView;
-			global::JudoDotNetXamarinSDK.Resource.Id.infoButtonID = global::Android.Xamarin.SampleApp.Resource.Id.infoButtonID;
-			global::JudoDotNetXamarinSDK.Resource.Id.issueNumberContainer = global::Android.Xamarin.SampleApp.Resource.Id.issueNumberContainer;
-			global::JudoDotNetXamarinSDK.Resource.Id.issueNumberEditText = global::Android.Xamarin.SampleApp.Resource.Id.issueNumberEditText;
-			global::JudoDotNetXamarinSDK.Resource.Id.issueNumberTitleText = global::Android.Xamarin.SampleApp.Resource.Id.issueNumberTitleText;
-			global::JudoDotNetXamarinSDK.Resource.Id.loadingLayout = global::Android.Xamarin.SampleApp.Resource.Id.loadingLayout;
-			global::JudoDotNetXamarinSDK.Resource.Id.payButton = global::Android.Xamarin.SampleApp.Resource.Id.payButton;
-			global::JudoDotNetXamarinSDK.Resource.Id.postCodeContainer = global::Android.Xamarin.SampleApp.Resource.Id.postCodeContainer;
-			global::JudoDotNetXamarinSDK.Resource.Id.postCodeEditText = global::Android.Xamarin.SampleApp.Resource.Id.postCodeEditText;
-			global::JudoDotNetXamarinSDK.Resource.Id.postCodeHelpButton = global::Android.Xamarin.SampleApp.Resource.Id.postCodeHelpButton;
-			global::JudoDotNetXamarinSDK.Resource.Id.postCodeTitleText = global::Android.Xamarin.SampleApp.Resource.Id.postCodeTitleText;
-			global::JudoDotNetXamarinSDK.Resource.Id.postCode_Msg = global::Android.Xamarin.SampleApp.Resource.Id.postCode_Msg;
-			global::JudoDotNetXamarinSDK.Resource.Id.startDateContainer = global::Android.Xamarin.SampleApp.Resource.Id.startDateContainer;
-			global::JudoDotNetXamarinSDK.Resource.Id.startDateEditText = global::Android.Xamarin.SampleApp.Resource.Id.startDateEditText;
-			global::JudoDotNetXamarinSDK.Resource.Id.startDateEntryView = global::Android.Xamarin.SampleApp.Resource.Id.startDateEntryView;
-			global::JudoDotNetXamarinSDK.Resource.Id.startDateTitleText = global::Android.Xamarin.SampleApp.Resource.Id.startDateTitleText;
-			global::JudoDotNetXamarinSDK.Resource.Integer.progressFrameDuration = global::Android.Xamarin.SampleApp.Resource.Integer.progressFrameDuration;
-			global::JudoDotNetXamarinSDK.Resource.Layout.avs = global::Android.Xamarin.SampleApp.Resource.Layout.avs;
-			global::JudoDotNetXamarinSDK.Resource.Layout.country_spinner_dropdown_item = global::Android.Xamarin.SampleApp.Resource.Layout.country_spinner_dropdown_item;
-			global::JudoDotNetXamarinSDK.Resource.Layout.payment = global::Android.Xamarin.SampleApp.Resource.Layout.payment;
-			global::JudoDotNetXamarinSDK.Resource.Layout.register_card = global::Android.Xamarin.SampleApp.Resource.Layout.register_card;
-			global::JudoDotNetXamarinSDK.Resource.Layout.secure3d = global::Android.Xamarin.SampleApp.Resource.Layout.secure3d;
-			global::JudoDotNetXamarinSDK.Resource.Layout.security = global::Android.Xamarin.SampleApp.Resource.Layout.security;
-			global::JudoDotNetXamarinSDK.Resource.Layout.startdate_and_issuenumber = global::Android.Xamarin.SampleApp.Resource.Layout.startdate_and_issuenumber;
-			global::JudoDotNetXamarinSDK.Resource.Layout.token_payment = global::Android.Xamarin.SampleApp.Resource.Layout.token_payment;
-			global::JudoDotNetXamarinSDK.Resource.Raw.courier = global::Android.Xamarin.SampleApp.Resource.Raw.courier;
-			global::JudoDotNetXamarinSDK.Resource.String.address_line1 = global::Android.Xamarin.SampleApp.Resource.String.address_line1;
-			global::JudoDotNetXamarinSDK.Resource.String.address_line2 = global::Android.Xamarin.SampleApp.Resource.String.address_line2;
-			global::JudoDotNetXamarinSDK.Resource.String.address_line3 = global::Android.Xamarin.SampleApp.Resource.String.address_line3;
-			global::JudoDotNetXamarinSDK.Resource.String.address_postcode = global::Android.Xamarin.SampleApp.Resource.String.address_postcode;
-			global::JudoDotNetXamarinSDK.Resource.String.address_town = global::Android.Xamarin.SampleApp.Resource.String.address_town;
-			global::JudoDotNetXamarinSDK.Resource.String.app_name = global::Android.Xamarin.SampleApp.Resource.String.app_name;
-			global::JudoDotNetXamarinSDK.Resource.String.billing_country = global::Android.Xamarin.SampleApp.Resource.String.billing_country;
-			global::JudoDotNetXamarinSDK.Resource.String.cancel = global::Android.Xamarin.SampleApp.Resource.String.cancel;
-			global::JudoDotNetXamarinSDK.Resource.String.card_no_obscured = global::Android.Xamarin.SampleApp.Resource.String.card_no_obscured;
-			global::JudoDotNetXamarinSDK.Resource.String.enter_card_cv2 = global::Android.Xamarin.SampleApp.Resource.String.enter_card_cv2;
-			global::JudoDotNetXamarinSDK.Resource.String.enter_card_expiry = global::Android.Xamarin.SampleApp.Resource.String.enter_card_expiry;
-			global::JudoDotNetXamarinSDK.Resource.String.enter_card_no = global::Android.Xamarin.SampleApp.Resource.String.enter_card_no;
-			global::JudoDotNetXamarinSDK.Resource.String.help_amount_header = global::Android.Xamarin.SampleApp.Resource.String.help_amount_header;
-			global::JudoDotNetXamarinSDK.Resource.String.help_amount_text = global::Android.Xamarin.SampleApp.Resource.String.help_amount_text;
-			global::JudoDotNetXamarinSDK.Resource.String.help_card_header = global::Android.Xamarin.SampleApp.Resource.String.help_card_header;
-			global::JudoDotNetXamarinSDK.Resource.String.help_card_text = global::Android.Xamarin.SampleApp.Resource.String.help_card_text;
-			global::JudoDotNetXamarinSDK.Resource.String.help_cv2_text = global::Android.Xamarin.SampleApp.Resource.String.help_cv2_text;
-			global::JudoDotNetXamarinSDK.Resource.String.help_email_header = global::Android.Xamarin.SampleApp.Resource.String.help_email_header;
-			global::JudoDotNetXamarinSDK.Resource.String.help_email_text = global::Android.Xamarin.SampleApp.Resource.String.help_email_text;
-			global::JudoDotNetXamarinSDK.Resource.String.help_info = global::Android.Xamarin.SampleApp.Resource.String.help_info;
-			global::JudoDotNetXamarinSDK.Resource.String.help_judo_header = global::Android.Xamarin.SampleApp.Resource.String.help_judo_header;
-			global::JudoDotNetXamarinSDK.Resource.String.help_judo_text = global::Android.Xamarin.SampleApp.Resource.String.help_judo_text;
-			global::JudoDotNetXamarinSDK.Resource.String.help_mob_header = global::Android.Xamarin.SampleApp.Resource.String.help_mob_header;
-			global::JudoDotNetXamarinSDK.Resource.String.help_mob_text = global::Android.Xamarin.SampleApp.Resource.String.help_mob_text;
-			global::JudoDotNetXamarinSDK.Resource.String.help_postcode_text = global::Android.Xamarin.SampleApp.Resource.String.help_postcode_text;
-			global::JudoDotNetXamarinSDK.Resource.String.help_postcode_title = global::Android.Xamarin.SampleApp.Resource.String.help_postcode_title;
-			global::JudoDotNetXamarinSDK.Resource.String.hint_issue_number = global::Android.Xamarin.SampleApp.Resource.String.hint_issue_number;
-			global::JudoDotNetXamarinSDK.Resource.String.hint_postcode = global::Android.Xamarin.SampleApp.Resource.String.hint_postcode;
-			global::JudoDotNetXamarinSDK.Resource.String.hint_start_date = global::Android.Xamarin.SampleApp.Resource.String.hint_start_date;
-			global::JudoDotNetXamarinSDK.Resource.String.issue_number = global::Android.Xamarin.SampleApp.Resource.String.issue_number;
-			global::JudoDotNetXamarinSDK.Resource.String.msg_avs_info_others = global::Android.Xamarin.SampleApp.Resource.String.msg_avs_info_others;
-			global::JudoDotNetXamarinSDK.Resource.String.msg_card_no_invalid = global::Android.Xamarin.SampleApp.Resource.String.msg_card_no_invalid;
-			global::JudoDotNetXamarinSDK.Resource.String.msg_check_exp_date = global::Android.Xamarin.SampleApp.Resource.String.msg_check_exp_date;
-			global::JudoDotNetXamarinSDK.Resource.String.msg_check_issue_number = global::Android.Xamarin.SampleApp.Resource.String.msg_check_issue_number;
-			global::JudoDotNetXamarinSDK.Resource.String.msg_check_number = global::Android.Xamarin.SampleApp.Resource.String.msg_check_number;
-			global::JudoDotNetXamarinSDK.Resource.String.msg_check_start_date = global::Android.Xamarin.SampleApp.Resource.String.msg_check_start_date;
-			global::JudoDotNetXamarinSDK.Resource.String.ok = global::Android.Xamarin.SampleApp.Resource.String.ok;
-			global::JudoDotNetXamarinSDK.Resource.String.payment = global::Android.Xamarin.SampleApp.Resource.String.payment;
-			global::JudoDotNetXamarinSDK.Resource.String.payment_button = global::Android.Xamarin.SampleApp.Resource.String.payment_button;
-			global::JudoDotNetXamarinSDK.Resource.String.payment_hint_amt = global::Android.Xamarin.SampleApp.Resource.String.payment_hint_amt;
-			global::JudoDotNetXamarinSDK.Resource.String.payment_hint_cv2 = global::Android.Xamarin.SampleApp.Resource.String.payment_hint_cv2;
-			global::JudoDotNetXamarinSDK.Resource.String.payment_hint_enter_amt_with_currency = global::Android.Xamarin.SampleApp.Resource.String.payment_hint_enter_amt_with_currency;
-			global::JudoDotNetXamarinSDK.Resource.String.payment_hint_judo = global::Android.Xamarin.SampleApp.Resource.String.payment_hint_judo;
-			global::JudoDotNetXamarinSDK.Resource.String.postcode = global::Android.Xamarin.SampleApp.Resource.String.postcode;
-			global::JudoDotNetXamarinSDK.Resource.String.preauth = global::Android.Xamarin.SampleApp.Resource.String.preauth;
-			global::JudoDotNetXamarinSDK.Resource.String.register_card = global::Android.Xamarin.SampleApp.Resource.String.register_card;
-			global::JudoDotNetXamarinSDK.Resource.String.secure3dtext = global::Android.Xamarin.SampleApp.Resource.String.secure3dtext;
-			global::JudoDotNetXamarinSDK.Resource.String.security_message = global::Android.Xamarin.SampleApp.Resource.String.security_message;
-			global::JudoDotNetXamarinSDK.Resource.String.start_date = global::Android.Xamarin.SampleApp.Resource.String.start_date;
-			global::JudoDotNetXamarinSDK.Resource.String.submit = global::Android.Xamarin.SampleApp.Resource.String.submit;
-			global::JudoDotNetXamarinSDK.Resource.String.title_payment = global::Android.Xamarin.SampleApp.Resource.String.title_payment;
-			global::JudoDotNetXamarinSDK.Resource.String.title_payment_token = global::Android.Xamarin.SampleApp.Resource.String.title_payment_token;
-			global::JudoDotNetXamarinSDK.Resource.String.title_pre_auth = global::Android.Xamarin.SampleApp.Resource.String.title_pre_auth;
-			global::JudoDotNetXamarinSDK.Resource.String.title_pre_auth_token = global::Android.Xamarin.SampleApp.Resource.String.title_pre_auth_token;
-			global::JudoDotNetXamarinSDK.Resource.String.title_register_card = global::Android.Xamarin.SampleApp.Resource.String.title_register_card;
-			global::JudoDotNetXamarinSDK.Resource.String.token_payment = global::Android.Xamarin.SampleApp.Resource.String.token_payment;
-			global::JudoDotNetXamarinSDK.Resource.String.token_preauth = global::Android.Xamarin.SampleApp.Resource.String.token_preauth;
-			global::JudoDotNetXamarinSDK.Resource.Style.ActionBar_Solid_Judo_payments = global::Android.Xamarin.SampleApp.Resource.Style.ActionBar_Solid_Judo_payments;
-			global::JudoDotNetXamarinSDK.Resource.Style.ActionBar_TitleTextStyle_Judo_payments = global::Android.Xamarin.SampleApp.Resource.Style.ActionBar_TitleTextStyle_Judo_payments;
-			global::JudoDotNetXamarinSDK.Resource.Style.Theme_Judo_payments = global::Android.Xamarin.SampleApp.Resource.Style.Theme_Judo_payments;
-			global::JudoDotNetXamarinSDK.Resource.Style.Theme_Judo_payments_base = global::Android.Xamarin.SampleApp.Resource.Style.Theme_Judo_payments_base;
-			global::JudoDotNetXamarinSDK.Resource.Style.judo_payments_AddressEditText = global::Android.Xamarin.SampleApp.Resource.Style.judo_payments_AddressEditText;
-			global::JudoDotNetXamarinSDK.Resource.Style.judo_payments_BaseButton = global::Android.Xamarin.SampleApp.Resource.Style.judo_payments_BaseButton;
-			global::JudoDotNetXamarinSDK.Resource.Style.judo_payments_Button = global::Android.Xamarin.SampleApp.Resource.Style.judo_payments_Button;
-			global::JudoDotNetXamarinSDK.Resource.Style.judo_payments_Button_Main = global::Android.Xamarin.SampleApp.Resource.Style.judo_payments_Button_Main;
-			global::JudoDotNetXamarinSDK.Resource.Style.judo_payments_Button_Secondary = global::Android.Xamarin.SampleApp.Resource.Style.judo_payments_Button_Secondary;
-			global::JudoDotNetXamarinSDK.Resource.Style.judo_payments_CardText = global::Android.Xamarin.SampleApp.Resource.Style.judo_payments_CardText;
-			global::JudoDotNetXamarinSDK.Resource.Style.judo_payments_ContainerFrame = global::Android.Xamarin.SampleApp.Resource.Style.judo_payments_ContainerFrame;
-			global::JudoDotNetXamarinSDK.Resource.Style.judo_payments_EditText = global::Android.Xamarin.SampleApp.Resource.Style.judo_payments_EditText;
-			global::JudoDotNetXamarinSDK.Resource.Style.judo_payments_EditText_Single = global::Android.Xamarin.SampleApp.Resource.Style.judo_payments_EditText_Single;
-			global::JudoDotNetXamarinSDK.Resource.Style.judo_payments_ErrorText = global::Android.Xamarin.SampleApp.Resource.Style.judo_payments_ErrorText;
-			global::JudoDotNetXamarinSDK.Resource.Style.judo_payments_HintText = global::Android.Xamarin.SampleApp.Resource.Style.judo_payments_HintText;
-			global::JudoDotNetXamarinSDK.Resource.Style.judo_payments_InfoButton = global::Android.Xamarin.SampleApp.Resource.Style.judo_payments_InfoButton;
-			global::JudoDotNetXamarinSDK.Resource.Style.judo_payments_InfoButton_Home = global::Android.Xamarin.SampleApp.Resource.Style.judo_payments_InfoButton_Home;
-			global::JudoDotNetXamarinSDK.Resource.Style.judo_payments_InputContainer = global::Android.Xamarin.SampleApp.Resource.Style.judo_payments_InputContainer;
-			global::JudoDotNetXamarinSDK.Resource.Style.judo_payments_InputFieldContainer = global::Android.Xamarin.SampleApp.Resource.Style.judo_payments_InputFieldContainer;
-			global::JudoDotNetXamarinSDK.Resource.Style.judo_payments_ProgressBar = global::Android.Xamarin.SampleApp.Resource.Style.judo_payments_ProgressBar;
-			global::JudoDotNetXamarinSDK.Resource.Style.judo_payments_ProgressDialog = global::Android.Xamarin.SampleApp.Resource.Style.judo_payments_ProgressDialog;
-			global::JudoDotNetXamarinSDK.Resource.Style.judo_payments_ProgressDialogAnim = global::Android.Xamarin.SampleApp.Resource.Style.judo_payments_ProgressDialogAnim;
-			global::JudoDotNetXamarinSDK.Resource.Style.judo_payments_SettingsButton = global::Android.Xamarin.SampleApp.Resource.Style.judo_payments_SettingsButton;
-			global::JudoDotNetXamarinSDK.Resource.Style.judo_payments_Spinner = global::Android.Xamarin.SampleApp.Resource.Style.judo_payments_Spinner;
-			global::JudoDotNetXamarinSDK.Resource.Style.judo_payments_Title = global::Android.Xamarin.SampleApp.Resource.Style.judo_payments_Title;
-			global::JudoDotNetXamarinSDK.Resource.Style.judo_payments_cardstrip = global::Android.Xamarin.SampleApp.Resource.Style.judo_payments_cardstrip;
-			global::JudoDotNetXamarinSDK.Resource.Style.judo_payments_divider = global::Android.Xamarin.SampleApp.Resource.Style.judo_payments_divider;
-			global::JudoDotNetXamarinSDK.Resource.Style.judo_payments_label = global::Android.Xamarin.SampleApp.Resource.Style.judo_payments_label;
-			global::JudoDotNetXamarinSDK.Resource.Style.judo_payments_label_Left = global::Android.Xamarin.SampleApp.Resource.Style.judo_payments_label_Left;
-			global::JudoDotNetXamarinSDK.Resource.Style.judo_payments_label_ReceiptList = global::Android.Xamarin.SampleApp.Resource.Style.judo_payments_label_ReceiptList;
-			global::JudoDotNetXamarinSDK.Resource.Style.judo_payments_label_Right = global::Android.Xamarin.SampleApp.Resource.Style.judo_payments_label_Right;
-			global::JudoDotNetXamarinSDK.Resource.Style.judo_payments_label_RightIcon = global::Android.Xamarin.SampleApp.Resource.Style.judo_payments_label_RightIcon;
-			global::JudoDotNetXamarinSDK.Resource.Style.judo_payments_message = global::Android.Xamarin.SampleApp.Resource.Style.judo_payments_message;
-			global::JudoDotNetXamarinSDK.Resource.Style.judo_payments_page = global::Android.Xamarin.SampleApp.Resource.Style.judo_payments_page;
-			global::JudoDotNetXamarinSDK.Resource.Style.judo_payments_spacer = global::Android.Xamarin.SampleApp.Resource.Style.judo_payments_spacer;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Animation.fade_in = global::Android.Xamarin.SampleApp.Resource.Animation.fade_in;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Animation.fade_in_out = global::Android.Xamarin.SampleApp.Resource.Animation.fade_in_out;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Animation.fade_out = global::Android.Xamarin.SampleApp.Resource.Animation.fade_out;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Animation.flipping_in = global::Android.Xamarin.SampleApp.Resource.Animation.flipping_in;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Animation.flipping_in_vert = global::Android.Xamarin.SampleApp.Resource.Animation.flipping_in_vert;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Animation.flipping_out = global::Android.Xamarin.SampleApp.Resource.Animation.flipping_out;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Animation.flipping_out_vert = global::Android.Xamarin.SampleApp.Resource.Animation.flipping_out_vert;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Array.avs_countries = global::Android.Xamarin.SampleApp.Resource.Array.avs_countries;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Array.avs_countries_postcode_label_text = global::Android.Xamarin.SampleApp.Resource.Array.avs_countries_postcode_label_text;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Color.accent = global::Android.Xamarin.SampleApp.Resource.Color.accent;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Color.action_bar_bg = global::Android.Xamarin.SampleApp.Resource.Color.action_bar_bg;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Color.button_main_bg = global::Android.Xamarin.SampleApp.Resource.Color.button_main_bg;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Color.button_main_bg_ripple = global::Android.Xamarin.SampleApp.Resource.Color.button_main_bg_ripple;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Color.button_text = global::Android.Xamarin.SampleApp.Resource.Color.button_text;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Color.cancel_bg = global::Android.Xamarin.SampleApp.Resource.Color.cancel_bg;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Color.cancel_bg_ripple = global::Android.Xamarin.SampleApp.Resource.Color.cancel_bg_ripple;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Color.cancel_text = global::Android.Xamarin.SampleApp.Resource.Color.cancel_text;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Color.card_off = global::Android.Xamarin.SampleApp.Resource.Color.card_off;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Color.card_on = global::Android.Xamarin.SampleApp.Resource.Color.card_on;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Color.debug0 = global::Android.Xamarin.SampleApp.Resource.Color.debug0;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Color.debug1 = global::Android.Xamarin.SampleApp.Resource.Color.debug1;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Color.debug2 = global::Android.Xamarin.SampleApp.Resource.Color.debug2;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Color.debug3 = global::Android.Xamarin.SampleApp.Resource.Color.debug3;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Color.debug4 = global::Android.Xamarin.SampleApp.Resource.Color.debug4;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Color.debug5 = global::Android.Xamarin.SampleApp.Resource.Color.debug5;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Color.debug6 = global::Android.Xamarin.SampleApp.Resource.Color.debug6;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Color.default_text = global::Android.Xamarin.SampleApp.Resource.Color.default_text;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Color.error_bg = global::Android.Xamarin.SampleApp.Resource.Color.error_bg;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Color.error_text = global::Android.Xamarin.SampleApp.Resource.Color.error_text;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Color.hint_text = global::Android.Xamarin.SampleApp.Resource.Color.hint_text;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Color.list_cell_bg = global::Android.Xamarin.SampleApp.Resource.Color.list_cell_bg;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Color.list_divider = global::Android.Xamarin.SampleApp.Resource.Color.list_divider;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Color.list_selector_pressed = global::Android.Xamarin.SampleApp.Resource.Color.list_selector_pressed;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Color.normal_text = global::Android.Xamarin.SampleApp.Resource.Color.normal_text;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Color.page_bg = global::Android.Xamarin.SampleApp.Resource.Color.page_bg;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Color.page_divider = global::Android.Xamarin.SampleApp.Resource.Color.page_divider;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Color.primary = global::Android.Xamarin.SampleApp.Resource.Color.primary;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Color.primary_dark = global::Android.Xamarin.SampleApp.Resource.Color.primary_dark;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Color.prog_dialog_bg = global::Android.Xamarin.SampleApp.Resource.Color.prog_dialog_bg;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Color.splash_bg = global::Android.Xamarin.SampleApp.Resource.Color.splash_bg;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Color.white_transparent = global::Android.Xamarin.SampleApp.Resource.Color.white_transparent;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Dimension.action_bar_icon_right_padding = global::Android.Xamarin.SampleApp.Resource.Dimension.action_bar_icon_right_padding;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Dimension.activity_horizontal_margin = global::Android.Xamarin.SampleApp.Resource.Dimension.activity_horizontal_margin;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Dimension.activity_vertical_margin = global::Android.Xamarin.SampleApp.Resource.Dimension.activity_vertical_margin;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Dimension.avs_container_height = global::Android.Xamarin.SampleApp.Resource.Dimension.avs_container_height;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Dimension.avs_msg_height = global::Android.Xamarin.SampleApp.Resource.Dimension.avs_msg_height;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Dimension.backgroundhinttextview_error_vertical_padding = global::Android.Xamarin.SampleApp.Resource.Dimension.backgroundhinttextview_error_vertical_padding;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Dimension.backgroundhinttextview_horizontal_padding = global::Android.Xamarin.SampleApp.Resource.Dimension.backgroundhinttextview_horizontal_padding;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Dimension.button_text_size = global::Android.Xamarin.SampleApp.Resource.Dimension.button_text_size;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Dimension.cancel_button_height = global::Android.Xamarin.SampleApp.Resource.Dimension.cancel_button_height;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Dimension.cardnumber_container_height = global::Android.Xamarin.SampleApp.Resource.Dimension.cardnumber_container_height;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Dimension.default_backgroundhinttextview_container_height = global::Android.Xamarin.SampleApp.Resource.Dimension.default_backgroundhinttextview_container_height;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Dimension.default_text_size = global::Android.Xamarin.SampleApp.Resource.Dimension.default_text_size;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Dimension.error_text_size = global::Android.Xamarin.SampleApp.Resource.Dimension.error_text_size;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Dimension.general_padding = global::Android.Xamarin.SampleApp.Resource.Dimension.general_padding;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Dimension.small_text_size = global::Android.Xamarin.SampleApp.Resource.Dimension.small_text_size;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Dimension.startdate_container_height = global::Android.Xamarin.SampleApp.Resource.Dimension.startdate_container_height;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Dimension.title_text_size = global::Android.Xamarin.SampleApp.Resource.Dimension.title_text_size;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.ab_solid_judo_payments = global::Android.Xamarin.SampleApp.Resource.Drawable.ab_solid_judo_payments;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.app_icon = global::Android.Xamarin.SampleApp.Resource.Drawable.app_icon;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.btn_default_disabled_focused_holo_light = global::Android.Xamarin.SampleApp.Resource.Drawable.btn_default_disabled_focused_holo_light;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.btn_default_disabled_holo_light = global::Android.Xamarin.SampleApp.Resource.Drawable.btn_default_disabled_holo_light;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.btn_default_focused_holo_light = global::Android.Xamarin.SampleApp.Resource.Drawable.btn_default_focused_holo_light;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.btn_default_normal_holo_light = global::Android.Xamarin.SampleApp.Resource.Drawable.btn_default_normal_holo_light;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.btn_default_pressed_holo_light = global::Android.Xamarin.SampleApp.Resource.Drawable.btn_default_pressed_holo_light;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.btn_settings = global::Android.Xamarin.SampleApp.Resource.Drawable.btn_settings;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.btn_settings_pressed = global::Android.Xamarin.SampleApp.Resource.Drawable.btn_settings_pressed;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.btn_yellow_disabled_focused_holo_light = global::Android.Xamarin.SampleApp.Resource.Drawable.btn_yellow_disabled_focused_holo_light;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.btn_yellow_disabled_holo_light = global::Android.Xamarin.SampleApp.Resource.Drawable.btn_yellow_disabled_holo_light;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.btn_yellow_focused_holo_light = global::Android.Xamarin.SampleApp.Resource.Drawable.btn_yellow_focused_holo_light;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.btn_yellow_normal_holo_light = global::Android.Xamarin.SampleApp.Resource.Drawable.btn_yellow_normal_holo_light;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.btn_yellow_pressed_holo_light = global::Android.Xamarin.SampleApp.Resource.Drawable.btn_yellow_pressed_holo_light;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.button_settings = global::Android.Xamarin.SampleApp.Resource.Drawable.button_settings;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.cab_background_top_judo_payments = global::Android.Xamarin.SampleApp.Resource.Drawable.cab_background_top_judo_payments;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.edit_text_background = global::Android.Xamarin.SampleApp.Resource.Drawable.edit_text_background;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.field = global::Android.Xamarin.SampleApp.Resource.Drawable.field;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.gold_button_bg = global::Android.Xamarin.SampleApp.Resource.Drawable.gold_button_bg;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.grey_button_bg = global::Android.Xamarin.SampleApp.Resource.Drawable.grey_button_bg;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.ic_3ds_logos = global::Android.Xamarin.SampleApp.Resource.Drawable.ic_3ds_logos;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.ic_actionbar_bg_shadow_light = global::Android.Xamarin.SampleApp.Resource.Drawable.ic_actionbar_bg_shadow_light;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.ic_app_icon = global::Android.Xamarin.SampleApp.Resource.Drawable.ic_app_icon;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.ic_card_amex = global::Android.Xamarin.SampleApp.Resource.Drawable.ic_card_amex;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.ic_card_cv2 = global::Android.Xamarin.SampleApp.Resource.Drawable.ic_card_cv2;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.ic_card_cv2_amex = global::Android.Xamarin.SampleApp.Resource.Drawable.ic_card_cv2_amex;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.ic_card_large_amex = global::Android.Xamarin.SampleApp.Resource.Drawable.ic_card_large_amex;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.ic_card_large_cv2 = global::Android.Xamarin.SampleApp.Resource.Drawable.ic_card_large_cv2;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.ic_card_large_cv2_amex = global::Android.Xamarin.SampleApp.Resource.Drawable.ic_card_large_cv2_amex;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.ic_card_large_maestro = global::Android.Xamarin.SampleApp.Resource.Drawable.ic_card_large_maestro;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.ic_card_large_mastercard = global::Android.Xamarin.SampleApp.Resource.Drawable.ic_card_large_mastercard;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.ic_card_large_unknown = global::Android.Xamarin.SampleApp.Resource.Drawable.ic_card_large_unknown;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.ic_card_large_visa = global::Android.Xamarin.SampleApp.Resource.Drawable.ic_card_large_visa;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.ic_card_logo_strip = global::Android.Xamarin.SampleApp.Resource.Drawable.ic_card_logo_strip;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.ic_card_maestro = global::Android.Xamarin.SampleApp.Resource.Drawable.ic_card_maestro;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.ic_card_mastercard = global::Android.Xamarin.SampleApp.Resource.Drawable.ic_card_mastercard;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.ic_card_unknown = global::Android.Xamarin.SampleApp.Resource.Drawable.ic_card_unknown;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.ic_card_visa = global::Android.Xamarin.SampleApp.Resource.Drawable.ic_card_visa;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.ic_home = global::Android.Xamarin.SampleApp.Resource.Drawable.ic_home;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.ic_info = global::Android.Xamarin.SampleApp.Resource.Drawable.ic_info;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.ic_lock = global::Android.Xamarin.SampleApp.Resource.Drawable.ic_lock;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.list_focused_judo_payments = global::Android.Xamarin.SampleApp.Resource.Drawable.list_focused_judo_payments;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.list_pressed_judo_payments = global::Android.Xamarin.SampleApp.Resource.Drawable.list_pressed_judo_payments;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.loader_1 = global::Android.Xamarin.SampleApp.Resource.Drawable.loader_1;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.loader_10 = global::Android.Xamarin.SampleApp.Resource.Drawable.loader_10;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.loader_11 = global::Android.Xamarin.SampleApp.Resource.Drawable.loader_11;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.loader_12 = global::Android.Xamarin.SampleApp.Resource.Drawable.loader_12;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.loader_2 = global::Android.Xamarin.SampleApp.Resource.Drawable.loader_2;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.loader_3 = global::Android.Xamarin.SampleApp.Resource.Drawable.loader_3;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.loader_4 = global::Android.Xamarin.SampleApp.Resource.Drawable.loader_4;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.loader_5 = global::Android.Xamarin.SampleApp.Resource.Drawable.loader_5;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.loader_6 = global::Android.Xamarin.SampleApp.Resource.Drawable.loader_6;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.loader_7 = global::Android.Xamarin.SampleApp.Resource.Drawable.loader_7;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.loader_8 = global::Android.Xamarin.SampleApp.Resource.Drawable.loader_8;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.loader_9 = global::Android.Xamarin.SampleApp.Resource.Drawable.loader_9;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.main_button_background = global::Android.Xamarin.SampleApp.Resource.Drawable.main_button_background;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.progress_spinner = global::Android.Xamarin.SampleApp.Resource.Drawable.progress_spinner;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.secondary_button_background = global::Android.Xamarin.SampleApp.Resource.Drawable.secondary_button_background;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.selectable_background_judo_payments = global::Android.Xamarin.SampleApp.Resource.Drawable.selectable_background_judo_payments;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.spinner_background_judo_payments = global::Android.Xamarin.SampleApp.Resource.Drawable.spinner_background_judo_payments;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.spinner_default = global::Android.Xamarin.SampleApp.Resource.Drawable.spinner_default;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.spinner_disabled = global::Android.Xamarin.SampleApp.Resource.Drawable.spinner_disabled;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.spinner_focused = global::Android.Xamarin.SampleApp.Resource.Drawable.spinner_focused;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.spinner_list_activated_holo = global::Android.Xamarin.SampleApp.Resource.Drawable.spinner_list_activated_holo;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.spinner_list_focused_holo = global::Android.Xamarin.SampleApp.Resource.Drawable.spinner_list_focused_holo;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.spinner_list_longpressed_holo = global::Android.Xamarin.SampleApp.Resource.Drawable.spinner_list_longpressed_holo;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.spinner_list_pressed_holo_light = global::Android.Xamarin.SampleApp.Resource.Drawable.spinner_list_pressed_holo_light;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.spinner_list_selector_disabled_holo_light = global::Android.Xamarin.SampleApp.Resource.Drawable.spinner_list_selector_disabled_holo_light;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.spinner_pressed = global::Android.Xamarin.SampleApp.Resource.Drawable.spinner_pressed;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.textfield_activated_holo_light = global::Android.Xamarin.SampleApp.Resource.Drawable.textfield_activated_holo_light;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.textfield_default_holo_light = global::Android.Xamarin.SampleApp.Resource.Drawable.textfield_default_holo_light;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.textfield_disabled_focused_holo_light = global::Android.Xamarin.SampleApp.Resource.Drawable.textfield_disabled_focused_holo_light;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.textfield_disabled_holo_light = global::Android.Xamarin.SampleApp.Resource.Drawable.textfield_disabled_holo_light;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Drawable.textfield_focused_holo_light = global::Android.Xamarin.SampleApp.Resource.Drawable.textfield_focused_holo_light;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Id.addressLine1 = global::Android.Xamarin.SampleApp.Resource.Id.addressLine1;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Id.addressLine2 = global::Android.Xamarin.SampleApp.Resource.Id.addressLine2;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Id.addressLine3 = global::Android.Xamarin.SampleApp.Resource.Id.addressLine3;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Id.addressPostCode = global::Android.Xamarin.SampleApp.Resource.Id.addressPostCode;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Id.addressTown = global::Android.Xamarin.SampleApp.Resource.Id.addressTown;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Id.avsEntryView = global::Android.Xamarin.SampleApp.Resource.Id.avsEntryView;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Id.avsMsgText = global::Android.Xamarin.SampleApp.Resource.Id.avsMsgText;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Id.cancelButton = global::Android.Xamarin.SampleApp.Resource.Id.cancelButton;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Id.cardEntryView = global::Android.Xamarin.SampleApp.Resource.Id.cardEntryView;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Id.countrySpinner = global::Android.Xamarin.SampleApp.Resource.Id.countrySpinner;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Id.cv2EntryView = global::Android.Xamarin.SampleApp.Resource.Id.cv2EntryView;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Id.hintTextView = global::Android.Xamarin.SampleApp.Resource.Id.hintTextView;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Id.infoButtonID = global::Android.Xamarin.SampleApp.Resource.Id.infoButtonID;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Id.issueNumberContainer = global::Android.Xamarin.SampleApp.Resource.Id.issueNumberContainer;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Id.issueNumberEditText = global::Android.Xamarin.SampleApp.Resource.Id.issueNumberEditText;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Id.issueNumberTitleText = global::Android.Xamarin.SampleApp.Resource.Id.issueNumberTitleText;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Id.loadingLayout = global::Android.Xamarin.SampleApp.Resource.Id.loadingLayout;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Id.payButton = global::Android.Xamarin.SampleApp.Resource.Id.payButton;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Id.postCodeContainer = global::Android.Xamarin.SampleApp.Resource.Id.postCodeContainer;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Id.postCodeEditText = global::Android.Xamarin.SampleApp.Resource.Id.postCodeEditText;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Id.postCodeHelpButton = global::Android.Xamarin.SampleApp.Resource.Id.postCodeHelpButton;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Id.postCodeTitleText = global::Android.Xamarin.SampleApp.Resource.Id.postCodeTitleText;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Id.postCode_Msg = global::Android.Xamarin.SampleApp.Resource.Id.postCode_Msg;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Id.startDateContainer = global::Android.Xamarin.SampleApp.Resource.Id.startDateContainer;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Id.startDateEditText = global::Android.Xamarin.SampleApp.Resource.Id.startDateEditText;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Id.startDateEntryView = global::Android.Xamarin.SampleApp.Resource.Id.startDateEntryView;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Id.startDateTitleText = global::Android.Xamarin.SampleApp.Resource.Id.startDateTitleText;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Integer.progressFrameDuration = global::Android.Xamarin.SampleApp.Resource.Integer.progressFrameDuration;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Layout.avs = global::Android.Xamarin.SampleApp.Resource.Layout.avs;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Layout.country_spinner_dropdown_item = global::Android.Xamarin.SampleApp.Resource.Layout.country_spinner_dropdown_item;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Layout.payment = global::Android.Xamarin.SampleApp.Resource.Layout.payment;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Layout.register_card = global::Android.Xamarin.SampleApp.Resource.Layout.register_card;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Layout.secure3d = global::Android.Xamarin.SampleApp.Resource.Layout.secure3d;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Layout.security = global::Android.Xamarin.SampleApp.Resource.Layout.security;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Layout.startdate_and_issuenumber = global::Android.Xamarin.SampleApp.Resource.Layout.startdate_and_issuenumber;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Layout.token_payment = global::Android.Xamarin.SampleApp.Resource.Layout.token_payment;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Raw.courier = global::Android.Xamarin.SampleApp.Resource.Raw.courier;
+			global::JudoDotNetXamarinAndroidSDK.Resource.String.address_line1 = global::Android.Xamarin.SampleApp.Resource.String.address_line1;
+			global::JudoDotNetXamarinAndroidSDK.Resource.String.address_line2 = global::Android.Xamarin.SampleApp.Resource.String.address_line2;
+			global::JudoDotNetXamarinAndroidSDK.Resource.String.address_line3 = global::Android.Xamarin.SampleApp.Resource.String.address_line3;
+			global::JudoDotNetXamarinAndroidSDK.Resource.String.address_postcode = global::Android.Xamarin.SampleApp.Resource.String.address_postcode;
+			global::JudoDotNetXamarinAndroidSDK.Resource.String.address_town = global::Android.Xamarin.SampleApp.Resource.String.address_town;
+			global::JudoDotNetXamarinAndroidSDK.Resource.String.app_name = global::Android.Xamarin.SampleApp.Resource.String.app_name;
+			global::JudoDotNetXamarinAndroidSDK.Resource.String.billing_country = global::Android.Xamarin.SampleApp.Resource.String.billing_country;
+			global::JudoDotNetXamarinAndroidSDK.Resource.String.cancel = global::Android.Xamarin.SampleApp.Resource.String.cancel;
+			global::JudoDotNetXamarinAndroidSDK.Resource.String.card_no_obscured = global::Android.Xamarin.SampleApp.Resource.String.card_no_obscured;
+			global::JudoDotNetXamarinAndroidSDK.Resource.String.enter_card_cv2 = global::Android.Xamarin.SampleApp.Resource.String.enter_card_cv2;
+			global::JudoDotNetXamarinAndroidSDK.Resource.String.enter_card_expiry = global::Android.Xamarin.SampleApp.Resource.String.enter_card_expiry;
+			global::JudoDotNetXamarinAndroidSDK.Resource.String.enter_card_no = global::Android.Xamarin.SampleApp.Resource.String.enter_card_no;
+			global::JudoDotNetXamarinAndroidSDK.Resource.String.help_amount_header = global::Android.Xamarin.SampleApp.Resource.String.help_amount_header;
+			global::JudoDotNetXamarinAndroidSDK.Resource.String.help_amount_text = global::Android.Xamarin.SampleApp.Resource.String.help_amount_text;
+			global::JudoDotNetXamarinAndroidSDK.Resource.String.help_card_header = global::Android.Xamarin.SampleApp.Resource.String.help_card_header;
+			global::JudoDotNetXamarinAndroidSDK.Resource.String.help_card_text = global::Android.Xamarin.SampleApp.Resource.String.help_card_text;
+			global::JudoDotNetXamarinAndroidSDK.Resource.String.help_cv2_text = global::Android.Xamarin.SampleApp.Resource.String.help_cv2_text;
+			global::JudoDotNetXamarinAndroidSDK.Resource.String.help_email_header = global::Android.Xamarin.SampleApp.Resource.String.help_email_header;
+			global::JudoDotNetXamarinAndroidSDK.Resource.String.help_email_text = global::Android.Xamarin.SampleApp.Resource.String.help_email_text;
+			global::JudoDotNetXamarinAndroidSDK.Resource.String.help_info = global::Android.Xamarin.SampleApp.Resource.String.help_info;
+			global::JudoDotNetXamarinAndroidSDK.Resource.String.help_judo_header = global::Android.Xamarin.SampleApp.Resource.String.help_judo_header;
+			global::JudoDotNetXamarinAndroidSDK.Resource.String.help_judo_text = global::Android.Xamarin.SampleApp.Resource.String.help_judo_text;
+			global::JudoDotNetXamarinAndroidSDK.Resource.String.help_mob_header = global::Android.Xamarin.SampleApp.Resource.String.help_mob_header;
+			global::JudoDotNetXamarinAndroidSDK.Resource.String.help_mob_text = global::Android.Xamarin.SampleApp.Resource.String.help_mob_text;
+			global::JudoDotNetXamarinAndroidSDK.Resource.String.help_postcode_text = global::Android.Xamarin.SampleApp.Resource.String.help_postcode_text;
+			global::JudoDotNetXamarinAndroidSDK.Resource.String.help_postcode_title = global::Android.Xamarin.SampleApp.Resource.String.help_postcode_title;
+			global::JudoDotNetXamarinAndroidSDK.Resource.String.hint_issue_number = global::Android.Xamarin.SampleApp.Resource.String.hint_issue_number;
+			global::JudoDotNetXamarinAndroidSDK.Resource.String.hint_postcode = global::Android.Xamarin.SampleApp.Resource.String.hint_postcode;
+			global::JudoDotNetXamarinAndroidSDK.Resource.String.hint_start_date = global::Android.Xamarin.SampleApp.Resource.String.hint_start_date;
+			global::JudoDotNetXamarinAndroidSDK.Resource.String.issue_number = global::Android.Xamarin.SampleApp.Resource.String.issue_number;
+			global::JudoDotNetXamarinAndroidSDK.Resource.String.msg_avs_info_others = global::Android.Xamarin.SampleApp.Resource.String.msg_avs_info_others;
+			global::JudoDotNetXamarinAndroidSDK.Resource.String.msg_card_no_invalid = global::Android.Xamarin.SampleApp.Resource.String.msg_card_no_invalid;
+			global::JudoDotNetXamarinAndroidSDK.Resource.String.msg_check_exp_date = global::Android.Xamarin.SampleApp.Resource.String.msg_check_exp_date;
+			global::JudoDotNetXamarinAndroidSDK.Resource.String.msg_check_issue_number = global::Android.Xamarin.SampleApp.Resource.String.msg_check_issue_number;
+			global::JudoDotNetXamarinAndroidSDK.Resource.String.msg_check_number = global::Android.Xamarin.SampleApp.Resource.String.msg_check_number;
+			global::JudoDotNetXamarinAndroidSDK.Resource.String.msg_check_start_date = global::Android.Xamarin.SampleApp.Resource.String.msg_check_start_date;
+			global::JudoDotNetXamarinAndroidSDK.Resource.String.ok = global::Android.Xamarin.SampleApp.Resource.String.ok;
+			global::JudoDotNetXamarinAndroidSDK.Resource.String.payment = global::Android.Xamarin.SampleApp.Resource.String.payment;
+			global::JudoDotNetXamarinAndroidSDK.Resource.String.payment_button = global::Android.Xamarin.SampleApp.Resource.String.payment_button;
+			global::JudoDotNetXamarinAndroidSDK.Resource.String.payment_hint_amt = global::Android.Xamarin.SampleApp.Resource.String.payment_hint_amt;
+			global::JudoDotNetXamarinAndroidSDK.Resource.String.payment_hint_cv2 = global::Android.Xamarin.SampleApp.Resource.String.payment_hint_cv2;
+			global::JudoDotNetXamarinAndroidSDK.Resource.String.payment_hint_enter_amt_with_currency = global::Android.Xamarin.SampleApp.Resource.String.payment_hint_enter_amt_with_currency;
+			global::JudoDotNetXamarinAndroidSDK.Resource.String.payment_hint_judo = global::Android.Xamarin.SampleApp.Resource.String.payment_hint_judo;
+			global::JudoDotNetXamarinAndroidSDK.Resource.String.postcode = global::Android.Xamarin.SampleApp.Resource.String.postcode;
+			global::JudoDotNetXamarinAndroidSDK.Resource.String.preauth = global::Android.Xamarin.SampleApp.Resource.String.preauth;
+			global::JudoDotNetXamarinAndroidSDK.Resource.String.register_card = global::Android.Xamarin.SampleApp.Resource.String.register_card;
+			global::JudoDotNetXamarinAndroidSDK.Resource.String.secure3dtext = global::Android.Xamarin.SampleApp.Resource.String.secure3dtext;
+			global::JudoDotNetXamarinAndroidSDK.Resource.String.security_message = global::Android.Xamarin.SampleApp.Resource.String.security_message;
+			global::JudoDotNetXamarinAndroidSDK.Resource.String.start_date = global::Android.Xamarin.SampleApp.Resource.String.start_date;
+			global::JudoDotNetXamarinAndroidSDK.Resource.String.submit = global::Android.Xamarin.SampleApp.Resource.String.submit;
+			global::JudoDotNetXamarinAndroidSDK.Resource.String.title_payment = global::Android.Xamarin.SampleApp.Resource.String.title_payment;
+			global::JudoDotNetXamarinAndroidSDK.Resource.String.title_payment_token = global::Android.Xamarin.SampleApp.Resource.String.title_payment_token;
+			global::JudoDotNetXamarinAndroidSDK.Resource.String.title_pre_auth = global::Android.Xamarin.SampleApp.Resource.String.title_pre_auth;
+			global::JudoDotNetXamarinAndroidSDK.Resource.String.title_pre_auth_token = global::Android.Xamarin.SampleApp.Resource.String.title_pre_auth_token;
+			global::JudoDotNetXamarinAndroidSDK.Resource.String.title_register_card = global::Android.Xamarin.SampleApp.Resource.String.title_register_card;
+			global::JudoDotNetXamarinAndroidSDK.Resource.String.token_payment = global::Android.Xamarin.SampleApp.Resource.String.token_payment;
+			global::JudoDotNetXamarinAndroidSDK.Resource.String.token_preauth = global::Android.Xamarin.SampleApp.Resource.String.token_preauth;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Style.ActionBar_Solid_Judo_payments = global::Android.Xamarin.SampleApp.Resource.Style.ActionBar_Solid_Judo_payments;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Style.ActionBar_TitleTextStyle_Judo_payments = global::Android.Xamarin.SampleApp.Resource.Style.ActionBar_TitleTextStyle_Judo_payments;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Style.Theme_Judo_payments = global::Android.Xamarin.SampleApp.Resource.Style.Theme_Judo_payments;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Style.Theme_Judo_payments_base = global::Android.Xamarin.SampleApp.Resource.Style.Theme_Judo_payments_base;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Style.judo_payments_AddressEditText = global::Android.Xamarin.SampleApp.Resource.Style.judo_payments_AddressEditText;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Style.judo_payments_BaseButton = global::Android.Xamarin.SampleApp.Resource.Style.judo_payments_BaseButton;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Style.judo_payments_Button = global::Android.Xamarin.SampleApp.Resource.Style.judo_payments_Button;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Style.judo_payments_Button_Main = global::Android.Xamarin.SampleApp.Resource.Style.judo_payments_Button_Main;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Style.judo_payments_Button_Secondary = global::Android.Xamarin.SampleApp.Resource.Style.judo_payments_Button_Secondary;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Style.judo_payments_CardText = global::Android.Xamarin.SampleApp.Resource.Style.judo_payments_CardText;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Style.judo_payments_ContainerFrame = global::Android.Xamarin.SampleApp.Resource.Style.judo_payments_ContainerFrame;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Style.judo_payments_EditText = global::Android.Xamarin.SampleApp.Resource.Style.judo_payments_EditText;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Style.judo_payments_EditText_Single = global::Android.Xamarin.SampleApp.Resource.Style.judo_payments_EditText_Single;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Style.judo_payments_ErrorText = global::Android.Xamarin.SampleApp.Resource.Style.judo_payments_ErrorText;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Style.judo_payments_HintText = global::Android.Xamarin.SampleApp.Resource.Style.judo_payments_HintText;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Style.judo_payments_InfoButton = global::Android.Xamarin.SampleApp.Resource.Style.judo_payments_InfoButton;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Style.judo_payments_InfoButton_Home = global::Android.Xamarin.SampleApp.Resource.Style.judo_payments_InfoButton_Home;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Style.judo_payments_InputContainer = global::Android.Xamarin.SampleApp.Resource.Style.judo_payments_InputContainer;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Style.judo_payments_InputFieldContainer = global::Android.Xamarin.SampleApp.Resource.Style.judo_payments_InputFieldContainer;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Style.judo_payments_ProgressBar = global::Android.Xamarin.SampleApp.Resource.Style.judo_payments_ProgressBar;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Style.judo_payments_ProgressDialog = global::Android.Xamarin.SampleApp.Resource.Style.judo_payments_ProgressDialog;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Style.judo_payments_ProgressDialogAnim = global::Android.Xamarin.SampleApp.Resource.Style.judo_payments_ProgressDialogAnim;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Style.judo_payments_SettingsButton = global::Android.Xamarin.SampleApp.Resource.Style.judo_payments_SettingsButton;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Style.judo_payments_Spinner = global::Android.Xamarin.SampleApp.Resource.Style.judo_payments_Spinner;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Style.judo_payments_Title = global::Android.Xamarin.SampleApp.Resource.Style.judo_payments_Title;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Style.judo_payments_cardstrip = global::Android.Xamarin.SampleApp.Resource.Style.judo_payments_cardstrip;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Style.judo_payments_divider = global::Android.Xamarin.SampleApp.Resource.Style.judo_payments_divider;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Style.judo_payments_label = global::Android.Xamarin.SampleApp.Resource.Style.judo_payments_label;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Style.judo_payments_label_Left = global::Android.Xamarin.SampleApp.Resource.Style.judo_payments_label_Left;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Style.judo_payments_label_ReceiptList = global::Android.Xamarin.SampleApp.Resource.Style.judo_payments_label_ReceiptList;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Style.judo_payments_label_Right = global::Android.Xamarin.SampleApp.Resource.Style.judo_payments_label_Right;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Style.judo_payments_label_RightIcon = global::Android.Xamarin.SampleApp.Resource.Style.judo_payments_label_RightIcon;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Style.judo_payments_message = global::Android.Xamarin.SampleApp.Resource.Style.judo_payments_message;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Style.judo_payments_page = global::Android.Xamarin.SampleApp.Resource.Style.judo_payments_page;
+			global::JudoDotNetXamarinAndroidSDK.Resource.Style.judo_payments_spacer = global::Android.Xamarin.SampleApp.Resource.Style.judo_payments_spacer;
 		}
 		
 		public partial class Animation
@@ -769,9 +769,6 @@ namespace Android.Xamarin.SampleApp
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f0c0022
-			public const int MsgText = 2131492898;
-			
 			// aapt resource value: 0x7f0c000f
 			public const int addressLine1 = 2131492879;
 			
@@ -805,9 +802,6 @@ namespace Android.Xamarin.SampleApp
 			// aapt resource value: 0x7f0c001a
 			public const int cv2EntryView = 2131492890;
 			
-			// aapt resource value: 0x7f0c0021
-			public const int getTransactions = 2131492897;
-			
 			// aapt resource value: 0x7f0c0007
 			public const int hintTextView = 2131492871;
 			
@@ -826,23 +820,20 @@ namespace Android.Xamarin.SampleApp
 			// aapt resource value: 0x7f0c000e
 			public const int loadingLayout = 2131492878;
 			
-			// aapt resource value: 0x7f0c0023
-			public const int nonUiExamples = 2131492899;
-			
 			// aapt resource value: 0x7f0c000c
 			public const int payButton = 2131492876;
 			
 			// aapt resource value: 0x7f0c001b
 			public const int payCard = 2131492891;
 			
-			// aapt resource value: 0x7f0c001e
-			public const int payPreAuth = 2131492894;
-			
 			// aapt resource value: 0x7f0c001d
-			public const int payToken = 2131492893;
+			public const int payPreAuth = 2131492893;
 			
-			// aapt resource value: 0x7f0c001f
-			public const int payTokenPreAuth = 2131492895;
+			// aapt resource value: 0x7f0c001c
+			public const int payToken = 2131492892;
+			
+			// aapt resource value: 0x7f0c001e
+			public const int payTokenPreAuth = 2131492894;
 			
 			// aapt resource value: 0x7f0c0002
 			public const int postCodeContainer = 2131492866;
@@ -859,11 +850,11 @@ namespace Android.Xamarin.SampleApp
 			// aapt resource value: 0x7f0c0001
 			public const int postCode_Msg = 2131492865;
 			
-			// aapt resource value: 0x7f0c0020
-			public const int registerCard = 2131492896;
+			// aapt resource value: 0x7f0c001f
+			public const int registerCard = 2131492895;
 			
-			// aapt resource value: 0x7f0c0024
-			public const int sdk_version_label = 2131492900;
+			// aapt resource value: 0x7f0c0021
+			public const int sdk_version_label = 2131492897;
 			
 			// aapt resource value: 0x7f0c0014
 			public const int startDateContainer = 2131492884;
@@ -877,8 +868,8 @@ namespace Android.Xamarin.SampleApp
 			// aapt resource value: 0x7f0c0015
 			public const int startDateTitleText = 2131492885;
 			
-			// aapt resource value: 0x7f0c001c
-			public const int threeDsecure = 2131492892;
+			// aapt resource value: 0x7f0c0020
+			public const int switch1 = 2131492896;
 			
 			static Id()
 			{
@@ -934,10 +925,7 @@ namespace Android.Xamarin.SampleApp
 			public const int token_payment = 2130903047;
 			
 			// aapt resource value: 0x7f030008
-			public const int withoutui = 2130903048;
-			
-			// aapt resource value: 0x7f030009
-			public const int withui = 2130903049;
+			public const int withui = 2130903048;
 			
 			static Layout()
 			{

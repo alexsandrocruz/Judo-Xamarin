@@ -12,7 +12,7 @@ using Android.Views;
 using Android.Widget;
 using Java.Security;
 
-namespace JudoDotNetXamarinSDK.Ui
+namespace JudoDotNetXamarinAndroidSDK.Ui
 {
     public class HelpButton : LinearLayout
     {

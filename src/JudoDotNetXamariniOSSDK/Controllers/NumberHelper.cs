@@ -1,8 +1,8 @@
-﻿using System;
+﻿using System.Globalization;
+using System.Linq;
 using Foundation;
-using System.Globalization;
 
-namespace JudoDotNetXamariniOSSDK
+namespace JudoDotNetXamariniOSSDK.Controllers
 {
 
 	internal static class NumberHelper
@@ -17,6 +17,15 @@ namespace JudoDotNetXamariniOSSDK
 			{
 				return new NSDecimalNumber(number.ToString(CultureInfo.InvariantCulture));
 			}
+
+		public static bool IsLuhnValid ( this string number)
+		{
+
+			var cardArray = number.Select (c => c - '0').ToArray ();
+
+			return (cardArray.Select ((d, i) => i % 2 == cardArray.Length % 2 ? ((2 * d) % 10) + d / 5 : d).Sum () % 10) == 0;
+		}
+
 		}
 
 }

@@ -21,7 +21,7 @@
                 style="@style/judo_payments_InputFieldContainer">
                 <LinearLayout
                     style="@style/judo_payments_InputContainer">
-                    <judodotnetxamarinsdk.ui.CV2EntryView
+                    <judodotnetxamarinandroidsdk.ui.CV2EntryView
                         android:id="@+id/cv2EntryView"
                         style="@style/judo_payments_EditText"
                         android:padding="0dp"
@@ -30,7 +30,7 @@
                         android:hint="@string/payment_hint_cv2"
                         android:layout_marginLeft="8dp"
                         android:layout_width="0dp" />
-                    <judodotnetxamarinsdk.ui.HelpButton
+                    <judodotnetxamarinandroidsdk.ui.HelpButton
                         android:id="@+id/infoButtonID"
                         style="@style/judo_payments_InfoButton"
                         android:src="@drawable/ic_info"

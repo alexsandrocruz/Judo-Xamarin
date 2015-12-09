@@ -7,14 +7,14 @@ using JudoPayDotNet.Logging;
 using Serilog;
 
 
-namespace JudoDotNetXamarin.Logging
+namespace JudoDotNetXamarin
 {
     public static class XamarinLoggerFactory
     {
-        public static ILog Create(Type askingType)
+        public static ILog Create (Type askingType)
         {
             //TODO: What to do with logs on a mobile app
-            return new Logger(new LoggerConfiguration().CreateLogger());
+            return new Logger (new LoggerConfiguration ().CreateLogger ());
         }
     }
 }

@@ -77,7 +77,7 @@
                     android:textColorHint="@color/hint_text"
                     android:layout_weight="1"
                     android:paddingLeft="@dimen/backgroundhinttextview_horizontal_padding" />
-                <judodotnetxamarinsdk.ui.HelpButton
+                <judodotnetxamarinandroidsdk.ui.HelpButton
                     android:id="@+id/postCodeHelpButton"
                     style="@style/judo_payments_InfoButton.Home"
                     android:src="@drawable/ic_home" />
